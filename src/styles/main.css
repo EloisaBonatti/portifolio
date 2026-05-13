@@ -1,29 +1,29 @@
 /* ============ TOKENS ============ */
 :root {
-  --bg: #0a0e1a;
-  --bg-alt: #0f1424;
-  --surface: #161c2f;
-  --border: #232a44;
-  --text: #e6e9f2;
-  --text-muted: #8892b0;
-  --accent: #64ffda;
-  --accent-soft: rgba(100, 255, 218, 0.1);
-  --shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  --bg: #1a0d18;
+  --bg-alt: #221020;
+  --surface: #2b1428;
+  --border: #3d1f37;
+  --text: #fce7f3;
+  --text-muted: #c4a0b8;
+  --accent: #ff4d94;
+  --accent-soft: rgba(255, 77, 148, 0.12);
+  --shadow: 0 10px 30px -15px rgba(255, 77, 148, 0.4);
   --radius: 10px;
   --container: 1100px;
   --transition: 0.25s ease;
 }
 
 [data-theme="light"] {
-  --bg: #ffffff;
-  --bg-alt: #f5f7fb;
+  --bg: #fff5f9;
+  --bg-alt: #ffe4ef;
   --surface: #ffffff;
-  --border: #e2e8f0;
-  --text: #1a202c;
-  --text-muted: #4a5568;
-  --accent: #0ea5a4;
-  --accent-soft: rgba(14, 165, 164, 0.08);
-  --shadow: 0 4px 20px -6px rgba(0, 0, 0, 0.1);
+  --border: #ffd1e3;
+  --text: #4a1d3a;
+  --text-muted: #8b4f73;
+  --accent: #e91e63;
+  --accent-soft: rgba(233, 30, 99, 0.08);
+  --shadow: 0 4px 20px -6px rgba(233, 30, 99, 0.15);
 }
 
 /* ============ RESET ============ */
@@ -49,7 +49,8 @@ img { max-width: 100%; display: block; }
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
-[data-theme="light"] .nav { background: rgba(255, 255, 255, 0.85); }
+.nav { background: rgba(26, 13, 24, 0.85); }
+[data-theme="light"] .nav { background: rgba(255, 245, 249, 0.9); }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 70px; }
 .nav__logo { font-family: 'JetBrains Mono', monospace; font-weight: 600; color: var(--accent); }
 .nav__links { display: flex; gap: 28px; }

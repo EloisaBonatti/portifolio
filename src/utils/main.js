@@ -2,51 +2,51 @@
 // Edite aqui pra adicionar seus projetos reais.
 const projects = [
   {
-    icon: "🚀",
-    title: "HotNovelas",
-    description: "Plataforma de microhistórias com IA generativa — recomendações personalizadas e leitura imersiva.",
-    tags: ["React", "Node.js", "AI"],
-    repo: "https://github.com/",
-    demo: ""
-  },
-  {
-    icon: "💼",
-    title: "Projeto Esapiens",
-    description: "Sistema corporativo com foco em produtividade, integrações e dashboards em tempo real.",
-    tags: ["TypeScript", "Next.js", "PostgreSQL"],
-    repo: "https://github.com/",
+    icon: "🔍",
+    title: "Product Discovery — App Mobile",
+    description: "Liderei a fase de discovery de um app B2C: entrevistas, jobs to be done, mapa de oportunidades e priorização de hipóteses.",
+    tags: ["Discovery", "Research", "JTBD"],
+    repo: "",
     demo: ""
   },
   {
     icon: "🎨",
-    title: "Design System Sexlog",
-    description: "Biblioteca de componentes e tokens compartilhada entre web, mobile e Figma.",
-    tags: ["Design System", "React", "Figma"],
-    repo: "https://github.com/",
-    demo: ""
-  },
-  {
-    icon: "🤖",
-    title: "Profile IA",
-    description: "Assistente inteligente que analisa perfis e sugere insights estratégicos baseados em dados.",
-    tags: ["Python", "LLM", "API"],
-    repo: "https://github.com/",
+    title: "Design System",
+    description: "Construção de design system do zero — tokens, componentes, documentação e governança entre design e dev.",
+    tags: ["Design System", "Figma", "UI"],
+    repo: "",
     demo: ""
   },
   {
     icon: "📊",
-    title: "Analytics Dashboard",
-    description: "Painel de métricas com visualizações interativas e relatórios customizáveis.",
-    tags: ["React", "D3.js", "Charts"],
-    repo: "https://github.com/",
+    title: "Redesign de Dashboard",
+    description: "Repensei a jornada de um dashboard analítico, reduzindo cliques em 40% e melhorando o NPS em 25 pontos.",
+    tags: ["UX", "Dashboard", "B2B"],
+    repo: "",
     demo: ""
   },
   {
-    icon: "🌐",
+    icon: "🚀",
+    title: "Lançamento de Feature",
+    description: "PO end-to-end: do problema à entrega. Definição de escopo, MVP, métricas de sucesso e iteração com base em dados.",
+    tags: ["Product Owner", "MVP", "OKRs"],
+    repo: "",
+    demo: ""
+  },
+  {
+    icon: "🧭",
+    title: "Onboarding Repensado",
+    description: "Redesign do fluxo de onboarding com testes de usabilidade — aumentou ativação em 35% nas duas primeiras semanas.",
+    tags: ["UX Research", "Activation", "Flow"],
+    repo: "",
+    demo: ""
+  },
+  {
+    icon: "✨",
     title: "Este portifólio",
-    description: "Site pessoal feito do zero com HTML, CSS e JS puro. Leve, rápido e responsivo.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    repo: "https://github.com/",
+    description: "Site pessoal feito do zero, com tema rosa, dark/light mode e foco em apresentar trabalho de forma clara e bonita.",
+    tags: ["UI", "Web", "Design"],
+    repo: "",
     demo: ""
   }
 ];
@@ -64,7 +64,7 @@ if (grid) {
       </div>
       <div class="project__links">
         ${p.repo ? `<a href="${p.repo}" target="_blank" rel="noopener">Código →</a>` : ""}
-        ${p.demo ? `<a href="${p.demo}" target="_blank" rel="noopener">Demo →</a>` : ""}
+        ${p.demo ? `<a href="${p.demo}" target="_blank" rel="noopener">Ver case →</a>` : ""}
       </div>
     </article>
   `).join("");
