@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case de discovery: pesquisa quantitativa sobre hábitos de postagem no Sexlog para destravar postagens múltiplas." />
+  <title>Pesquisa de hábitos de postagem · Case de Produto · Eloisa Bonatti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/main.css" />
+  <link rel="stylesheet" href="../src/styles/case.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">✦ eloisa</a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="../index.html#sobre">Sobre</a></li>
+          <li><a href="../index.html#projetos">Projetos</a></li>
+          <li><a href="../index.html#experiencia">Experiência</a></li>
+          <li><a href="../index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+
+  <!-- CASE HERO -->
+  <section class="case-hero">
+    <div class="container">
+      <a href="../index.html#projetos" class="back-link">← Voltar para projetos</a>
+      <div class="case-hero__icon">📊</div>
+      <p class="case-hero__category">Case de Discovery · Sexlog</p>
+      <h1 class="case-hero__title">Pesquisa quantitativa sobre hábitos de postagem</h1>
+      <p class="case-hero__subtitle">
+        Notei um baixo uso do recurso de postagens múltiplas no Sexlog. Como parte
+        da estratégia de discovery, <strong>idealizei, apliquei e analisei</strong>
+        uma pesquisa quantitativa pra entender se o problema era de hábito ou de
+        produto, e desenhei o plano de ação que destrava o uso.
+      </p>
+    </div>
+  </section>
+
+  <!-- CASE BODY -->
+  <article class="case-body container">
+
+    <!-- TL;DR -->
+    <section class="case-section">
+      <h2><span class="case-section__num">00</span> TL;DR</h2>
+      <div class="callout">
+        <p>
+          Apenas <strong>8,4% das postagens</strong> no Sexlog usam o recurso de
+          múltiplas mídias. Pra entender o porquê, desenhei e rodei uma pesquisa
+          quantitativa que mostrou: <strong>a baixa adesão é metade hábito,
+          metade produto</strong>. <strong>36% dos usuários não sabiam</strong>
+          que era possível postar mais de uma mídia. Os que sabem evitam por
+          comentários e likes confusos no formato atual. A partir disso, priorizei
+          <strong>3 ações</strong>: sinalizar a opção no upload, trocar mosaico
+          por carrossel e concentrar interações na postagem pai.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="case-section">
+      <h2><span class="case-section__num">01</span> Problema</h2>
+      <p>
+        Olhando a distribuição de postagens por tipo, percebi um desequilíbrio
+        evidente:
+      </p>
+      <ul class="bullet-list">
+        <li><strong>83%</strong> · Imagens (única)</li>
+        <li><strong>8,4%</strong> · Postagens múltiplas</li>
+        <li><strong>7,4%</strong> · Vídeos</li>
+        <li><strong>1,2%</strong> · Texto</li>
+      </ul>
+      <p>
+        Postagens múltiplas tinham uma adesão muito baixa. A pergunta que precisava
+        ser respondida: <strong>isso acontece por hábito dos usuários ou porque o
+        recurso é mal desenvolvido?</strong>
+      </p>
+    </section>
+
+    <!-- OBJETIVOS -->
+    <section class="case-section">
+      <h2><span class="case-section__num">02</span> Objetivos da pesquisa</h2>
+      <ul class="bullet-list">
+        <li>
+          <strong>Principal:</strong> entender porque o uso de postagens múltiplas
+          tem tão pouca expressão dentro do Sexlog.
+        </li>
+        <li>
+          <strong>Secundário:</strong> mapear os hábitos gerais de postagem para
+          informar futuras melhorias na experiência.
+        </li>
+      </ul>
+    </section>
+
+    <!-- METODOLOGIA -->
+    <section class="case-section">
+      <h2><span class="case-section__num">03</span> Método</h2>
+      <p>
+        Optei por <strong>pesquisa quantitativa</strong> com perguntas indiretas.
+        Em vez de perguntar diretamente “por que você não usa postagens múltiplas?”
+        (o que geraria reação automática), montei um questionário em volta de:
+      </p>
+      <ul class="bullet-list">
+        <li>Quem está respondendo</li>
+        <li>Qual a frequência de postagem</li>
+        <li>O motivo pelo qual posta</li>
+        <li>O que considera uma postagem de sucesso</li>
+        <li>Modalidade preferida (foto, vídeo, texto, múltiplas)</li>
+        <li>Por que não usa a postagem múltipla</li>
+      </ul>
+      <div class="callout">
+        <p>
+          <strong>Validação da amostra:</strong> a proporção de gênero dos respondentes
+          se aproximou da base geral (70% homens, 22% casais), o que reduziu o viés
+          de seleção e deu mais confiança aos resultados.
+        </p>
+      </div>
+    </section>
+
+    <!-- ACHADOS -->
+    <section class="case-section">
+      <h2><span class="case-section__num">04</span> Principais achados</h2>
+
+      <p><strong>Sobre o objetivo no Sexlog:</strong></p>
+      <ul class="bullet-list">
+        <li><strong>46,3%</strong> · marcar encontros para sexo</li>
+        <li><strong>42,0%</strong> · conhecer pessoas liberais para swing/ménage</li>
+        <li>Só 12% dos usuários focam em se exibir ou ver fotos/vídeos</li>
+      </ul>
+      <p>
+        Apesar de termos features para exibicionistas e viewers, o core do Sexlog
+        é gente focada em encontro. Isso muda como olhamos para tudo o que sustenta
+        ou atrapalha esse objetivo.
+      </p>
+
+      <p><strong>Sobre a frequência de postagem:</strong></p>
+      <ul class="bullet-list">
+        <li><strong>41,9%</strong> · raramente posta</li>
+        <li><strong>26,2%</strong> · só posta quando tem material novo</li>
+        <li><strong>66,4%</strong> · tira fotos para postar quando vê que faz tempo que não posta nada</li>
+      </ul>
+      <p>
+        Achado importante: usuários se importam com a <strong>frequência</strong>
+        de postagens, não com tempo real. Eles não querem montar cronologia, querem
+        manter o perfil ativo pra gerar pontos de contato.
+      </p>
+
+      <p><strong>Sobre o que é uma postagem de sucesso:</strong></p>
+      <ul class="bullet-list">
+        <li><strong>39,8%</strong> · uma postagem que levou a um encontro</li>
+        <li><strong>35,0%</strong> · uma postagem que trouxe um perfil novo interessante</li>
+        <li>Likes e comentários ficam em terceiro lugar (17%)</li>
+      </ul>
+
+      <p><strong>Sobre o uso de postagens múltiplas:</strong></p>
+      <ul class="bullet-list">
+        <li><strong>77,5%</strong> · <strong>nunca fizeram</strong> uma postagem múltipla</li>
+        <li><strong>85,5%</strong> · costumam postar foto única</li>
+        <li>Postagens múltiplas representam só 7,6% das modalidades preferidas</li>
+      </ul>
+
+      <p><strong>Por que não usam o recurso (pergunta direta):</strong></p>
+      <ul class="bullet-list">
+        <li><strong>38,2%</strong> · prefiro dividir em várias postagens pra ter novidades sempre</li>
+        <li><strong>36,4%</strong> · não sabia que era possível postar mais de uma foto/vídeo por vez</li>
+        <li><strong>21,8%</strong> · acho mais fácil acompanhar comentários e likes em postagens de mídia única</li>
+      </ul>
+    </section>
+
+    <!-- INFERÊNCIAS -->
+    <section class="case-section">
+      <h2><span class="case-section__num">05</span> Inferências</h2>
+      <p>Combinando todas as respostas, cheguei nas seguintes conclusões:</p>
+      <ul class="bullet-list">
+        <li>
+          Usuários postam para <strong>gerar pontos de contato</strong> com novos
+          perfis e aumentar a chance de encontro.
+        </li>
+        <li>
+          Não se importam em postar em tempo real, importam em <strong>postar
+          sempre</strong>.
+        </li>
+        <li>
+          Não querem montar cronologia como em outras redes sociais.
+        </li>
+        <li>
+          Quanto mais postagens, <strong>mais pontos de contato</strong> com novos
+          usuários.
+        </li>
+        <li>
+          Existe um <strong>problema real de produto</strong> na visualização de
+          comentários e likes das postagens múltiplas.
+        </li>
+        <li>
+          Usuários reclamam do <strong>mosaico</strong> e do redimensionamento que
+          deforma as imagens.
+        </li>
+        <li>
+          A modal de upload <strong>não comunica</strong> que é possível postar mais
+          de uma mídia por vez.
+        </li>
+      </ul>
+    </section>
+
+    <!-- AÇÕES -->
+    <section class="case-section">
+      <h2><span class="case-section__num">06</span> Plano de ação</h2>
+      <p>
+        A partir das inferências, priorizei <strong>3 ações</strong> que atacam tanto
+        o problema de comunicação quanto o de produto:
+      </p>
+
+      <div class="groups">
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Ação 1</span>
+            <span class="group__role">Comunicação</span>
+          </div>
+          <h3>Sinalizar no upload</h3>
+          <p class="group__hypo">Resolve os 36% que não sabiam que era possível.</p>
+          <p>
+            Melhorar a modal de publicação para deixar claro que é possível postar
+            mais de uma foto ou vídeo de uma vez.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Ação 2</span>
+            <span class="group__role">Produto</span>
+          </div>
+          <h3>Carrossel no lugar do mosaico</h3>
+          <p class="group__hypo">Resolve a queixa de deformação e perda de qualidade.</p>
+          <p>
+            Exibir as mídias em formato de carrossel, com foco em uma mídia por vez,
+            sem redimensionamento que distorce. O clique abre direto a foto ampliada,
+            e a navegação horizontal leva pelas mídias da postagem.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Ação 3</span>
+            <span class="group__role">Interação</span>
+          </div>
+          <h3>Interações só na postagem pai</h3>
+          <p class="group__hypo">Resolve a confusão de comentários e likes.</p>
+          <p>
+            Concentrar comentários e reações na postagem pai, repetindo o mesmo
+            conjunto em todas as mídias do carrossel. Dado interno mostrou que o
+            incremento de ter interações nas postagens filhas é muito pobre, e a
+            confusão foi a maior reclamação dos usuários.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- APRENDIZADOS -->
+    <section class="case-section">
+      <h2><span class="case-section__num">07</span> Aprendizados</h2>
+      <ul class="bullet-list">
+        <li>
+          <strong>Pergunta indireta &gt; pergunta direta:</strong> perguntar “por
+          que você não usa X” gera reação automática. Mapear o comportamento ao
+          redor e cruzar dados revela o motivo real.
+        </li>
+        <li>
+          <strong>Hábito e produto andam juntos:</strong> a baixa adesão era os
+          dois ao mesmo tempo. Sinalizar melhor resolve só parte do problema;
+          corrigir mosaico e interações resolve o resto.
+        </li>
+        <li>
+          <strong>Conhecer o core do usuário muda decisão:</strong> saber que o
+          motor é “gerar pontos de contato pra encontro” reposicionou todas as
+          ações. A questão deixa de ser “como faço o usuário usar múltiplas?” e
+          vira “como múltiplas viram mais oportunidade de encontro?”.
+        </li>
+        <li>
+          <strong>Validar a amostra antes da análise:</strong> conferir se a
+          composição da pesquisa bate com a base geral é o que evita conclusões
+          enviesadas e dá confiança pra agir.
+        </li>
+      </ul>
+    </section>
+
+  </article>
+
+  <!-- NAV ENTRE PROJETOS -->
+  <section class="case-nav container">
+    <a href="../index.html#projetos" class="btn btn--ghost">← Todos os projetos</a>
+    <a href="../index.html#contato" class="btn btn--primary">Vamos conversar →</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Feito com 💖 por Eloisa Bonatti · <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="../src/utils/main.js"></script>
+</body>
+</html>

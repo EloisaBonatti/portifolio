@@ -22,14 +22,14 @@ const projects = [
     available: true
   },
   {
-    icon: "🧭",
-    title: "Redesign de Onboarding",
-    subtitle: "Discovery + redesign do fluxo de novos usuários",
-    description: "Pesquisa com usuários, mapeamento de fricções e redesign completo do fluxo de cadastro e primeiros passos no produto.",
-    tags: ["UX Research", "Activation", "Discovery"],
-    impact: "↑ Ativação na primeira semana",
-    link: "#",
-    available: false
+    icon: "📊",
+    title: "Pesquisa quantitativa: hábitos de postagem",
+    subtitle: "Discovery para destravar postagens múltiplas",
+    description: "Notei um baixo uso do recurso de postagens múltiplas no Sexlog. Como parte da estratégia de discovery, idealizei, apliquei e analisei uma pesquisa quantitativa para entender se o problema era de hábito ou de produto, e desenhei as ações para destravar.",
+    tags: ["Pesquisa Quanti", "Discovery", "UX Research"],
+    impact: "Diagnóstico do gap entre hábito e produto · 3 ações priorizadas",
+    link: "projetos/pesquisa-postagens-multiplas.html",
+    available: true
   }
 ];
 
