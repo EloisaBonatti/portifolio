@@ -3,12 +3,12 @@
   --bg: #1a0d18;
   --bg-alt: #221020;
   --surface: #2b1428;
-  --border: #3d1f37;
-  --text: #fce7f3;
-  --text-muted: #c4a0b8;
-  --accent: #ff4d94;
-  --accent-soft: rgba(255, 77, 148, 0.12);
-  --shadow: 0 10px 30px -15px rgba(255, 77, 148, 0.4);
+  --border: #4a2942;
+  --text: #ffffff;
+  --text-muted: #e8d4e0;
+  --accent: #ff6ba8;
+  --accent-soft: rgba(255, 107, 168, 0.14);
+  --shadow: 0 10px 30px -15px rgba(255, 107, 168, 0.4);
   --radius: 10px;
   --container: 1100px;
   --transition: 0.25s ease;
@@ -18,12 +18,12 @@
   --bg: #fff5f9;
   --bg-alt: #ffe4ef;
   --surface: #ffffff;
-  --border: #ffd1e3;
-  --text: #4a1d3a;
-  --text-muted: #8b4f73;
-  --accent: #e91e63;
-  --accent-soft: rgba(233, 30, 99, 0.08);
-  --shadow: 0 4px 20px -6px rgba(233, 30, 99, 0.15);
+  --border: #ffc4dc;
+  --text: #2d0f23;
+  --text-muted: #5c2945;
+  --accent: #c2185b;
+  --accent-soft: rgba(194, 24, 91, 0.08);
+  --shadow: 0 4px 20px -6px rgba(194, 24, 91, 0.15);
 }
 
 /* ============ RESET ============ */
@@ -33,7 +33,10 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 16.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   transition: background var(--transition), color var(--transition);
 }
 a { color: inherit; text-decoration: none; transition: color var(--transition); }
@@ -54,7 +57,8 @@ img { max-width: 100%; display: block; }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 70px; }
 .nav__logo { font-family: 'JetBrains Mono', monospace; font-weight: 600; color: var(--accent); }
 .nav__links { display: flex; gap: 28px; }
-.nav__links a { font-size: 0.92rem; color: var(--text-muted); }
+.nav__links a { font-size: 0.92rem; color: var(--text); opacity: 0.85; }
+.nav__links a:hover { opacity: 1; }
 .nav__links a:hover { color: var(--accent); }
 .theme-toggle {
   background: none; border: 1px solid var(--border); color: var(--text);
@@ -69,7 +73,7 @@ img { max-width: 100%; display: block; }
 .hero__hello { color: var(--accent); font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; margin-bottom: 20px; }
 .hero__name { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 10px; }
 .hero__role { font-size: clamp(1.5rem, 4vw, 2.8rem); font-weight: 700; color: var(--text-muted); margin-bottom: 24px; }
-.hero__bio { font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin-bottom: 40px; }
+.hero__bio { font-size: 1.1rem; color: var(--text); max-width: 600px; margin-bottom: 40px; opacity: 0.92; }
 .hero__ctas { display: flex; gap: 16px; flex-wrap: wrap; }
 
 /* ============ BUTTONS ============ */
@@ -101,7 +105,7 @@ img { max-width: 100%; display: block; }
 
 /* ============ SOBRE ============ */
 .about { display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px; align-items: start; }
-.about__text p { color: var(--text-muted); margin-bottom: 16px; }
+.about__text p { color: var(--text); margin-bottom: 16px; opacity: 0.9; font-size: 1.02rem; }
 .about__text strong { color: var(--text); }
 .about__highlights { display: grid; gap: 16px; }
 .highlight {
@@ -133,7 +137,7 @@ img { max-width: 100%; display: block; }
 .project__icon { font-size: 2rem; margin-bottom: 18px; }
 .project__title { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; }
 .project__subtitle { color: var(--accent); font-size: 0.85rem; margin-bottom: 14px; font-family: 'JetBrains Mono', monospace; }
-.project__desc { color: var(--text-muted); font-size: 0.95rem; flex: 1; margin-bottom: 18px; }
+.project__desc { color: var(--text); font-size: 0.95rem; flex: 1; margin-bottom: 18px; opacity: 0.88; line-height: 1.65; }
 .project__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
 .project__tag {
   font-family: 'JetBrains Mono', monospace; font-size: 0.75rem;
@@ -182,7 +186,7 @@ img { max-width: 100%; display: block; }
   font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;
 }
 .timeline__company-sub {
-  color: var(--text-muted); font-size: 0.9rem;
+  color: var(--text); font-size: 0.9rem; opacity: 0.85;
 }
 .timeline__tenure {
   display: flex; flex-direction: column; align-items: flex-end; gap: 6px;
@@ -215,7 +219,7 @@ img { max-width: 100%; display: block; }
 .role__title {
   font-size: 1rem; font-weight: 600; margin-bottom: 8px;
 }
-.role__desc { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; }
+.role__desc { color: var(--text); font-size: 0.95rem; line-height: 1.7; opacity: 0.88; }
 
 @media (max-width: 640px) {
   .timeline__tenure { align-items: flex-start; }
@@ -235,7 +239,7 @@ img { max-width: 100%; display: block; }
 .education__card:hover { border-color: var(--accent); transform: translateY(-4px); }
 .education__icon { font-size: 2rem; }
 .education__card h3 { margin-bottom: 8px; font-size: 1.1rem; }
-.education__school { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 4px; }
+.education__school { color: var(--text); font-size: 0.95rem; margin-bottom: 4px; opacity: 0.9; }
 .education__period {
   font-family: 'JetBrains Mono', monospace;
   color: var(--accent); font-size: 0.85rem;
@@ -250,13 +254,14 @@ img { max-width: 100%; display: block; }
 .skill-group h3 { color: var(--accent); margin-bottom: 16px; font-size: 1.1rem; }
 .skill-group ul li {
   font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;
-  color: var(--text-muted); padding: 4px 0; position: relative; padding-left: 18px;
+  color: var(--text); padding: 6px 0; position: relative; padding-left: 18px;
+  opacity: 0.9;
 }
 .skill-group ul li::before { content: "▸"; color: var(--accent); position: absolute; left: 0; }
 
 /* ============ CONTATO ============ */
 .contact { text-align: center; }
-.contact__lead { color: var(--text-muted); max-width: 500px; margin: 0 auto 40px; font-size: 1.05rem; }
+.contact__lead { color: var(--text); max-width: 500px; margin: 0 auto 40px; font-size: 1.05rem; opacity: 0.9; }
 .contact__social { margin-top: 40px; display: flex; gap: 24px; justify-content: center; }
 .contact__social a { color: var(--text-muted); font-size: 0.9rem; }
 .contact__social a:hover { color: var(--accent); }
