@@ -22,6 +22,16 @@ const projects = [
     available: true
   },
   {
+    icon: "💳",
+    title: "Cartãodinho",
+    subtitle: "Projeto pessoal: app de gestão de cartões",
+    description: "App pessoal que idealizei e desenhei do zero — da concepção e regras de negócio aos fluxos e telas. Gestão multicartão com modo evento, relatórios por categoria e roadmap de monetização em 3 fases.",
+    tags: ["Concepção", "Fluxos", "UI Mobile", "Projeto Pessoal"],
+    impact: "Produto desenhado end-to-end · 3 entregas planejadas",
+    link: "projetos/cartaodinho.html",
+    available: true
+  },
+  {
     icon: "📊",
     title: "Pesquisa quantitativa: hábitos de postagem",
     subtitle: "Discovery para destravar postagens múltiplas",

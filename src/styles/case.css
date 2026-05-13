@@ -253,6 +253,26 @@
   margin: 0 auto;
 }
 
+/* SCREENSHOTS */
+.screenshot {
+  margin: 24px 0 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+}
+.screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.screen-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 32px 0 10px;
+  color: var(--accent);
+}
+
 /* SOON CARD */
 .project--soon {
   opacity: 0.55;
