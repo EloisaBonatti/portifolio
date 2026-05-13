@@ -144,6 +144,53 @@ img { max-width: 100%; display: block; }
 }
 .project__links a:hover { color: var(--accent); border-color: var(--accent); }
 
+/* ============ TIMELINE (EXPERIÊNCIA) ============ */
+.timeline { position: relative; padding-left: 30px; }
+.timeline::before {
+  content: ""; position: absolute; left: 8px; top: 8px; bottom: 8px;
+  width: 2px; background: linear-gradient(var(--accent), transparent);
+}
+.timeline__item {
+  position: relative; margin-bottom: 40px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 24px 28px;
+  transition: all var(--transition);
+}
+.timeline__item::before {
+  content: ""; position: absolute; left: -30px; top: 28px;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--bg); border: 3px solid var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+.timeline__item:hover { border-color: var(--accent); transform: translateX(4px); }
+.timeline__period {
+  font-family: 'JetBrains Mono', monospace; font-size: 0.8rem;
+  color: var(--accent); margin-bottom: 8px;
+}
+.timeline__role { font-size: 1.2rem; font-weight: 700; margin-bottom: 4px; }
+.timeline__company { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 12px; font-weight: 500; }
+.timeline__desc { color: var(--text-muted); font-size: 0.95rem; }
+
+/* ============ FORMAÇÃO ============ */
+.education {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.education__card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 28px;
+  display: flex; gap: 20px; align-items: flex-start;
+  transition: all var(--transition);
+}
+.education__card:hover { border-color: var(--accent); transform: translateY(-4px); }
+.education__icon { font-size: 2rem; }
+.education__card h3 { margin-bottom: 8px; font-size: 1.1rem; }
+.education__school { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 4px; }
+.education__period {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent); font-size: 0.85rem;
+}
+
 /* ============ SKILLS ============ */
 .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
 .skill-group {

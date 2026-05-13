@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portifólio pessoal — projetos, experiência e contato." />
-  <title>Portifólio</title>
+  <title>Eloisa Bonatti — Product Owner & Product Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -18,8 +18,10 @@
       <nav>
         <ul class="nav__links">
           <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#formacao">Formação</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -31,11 +33,12 @@
   <section class="hero">
     <div class="container hero__inner">
       <p class="hero__hello">👋 Oi, eu sou a</p>
-      <h1 class="hero__name">Eloisa</h1>
+      <h1 class="hero__name">Eloisa Bonatti</h1>
       <h2 class="hero__role">Product Owner &amp; Product Designer</h2>
       <p class="hero__bio">
-        Conecto estratégia, design e tecnologia para construir produtos que resolvem problemas
-        reais e geram impacto. Aqui você encontra meus principais projetos, processos e como me achar.
+        Coordeno a equipe de produto do <strong>Sexlog</strong>, uma rede social com mais de
+        <strong>18 milhões de usuários</strong>. Conecto discovery, design e dados para construir
+        produtos que resolvem problemas reais e geram impacto de verdade.
       </p>
       <div class="hero__ctas">
         <a href="#projetos" class="btn btn--primary">Ver projetos</a>
@@ -63,18 +66,81 @@
           </p>
         </div>
         <div class="about__highlights">
-          <div class="highlight"><span class="highlight__num">5+</span><span>Anos de experiência</span></div>
-          <div class="highlight"><span class="highlight__num">20+</span><span>Projetos entregues</span></div>
+          <div class="highlight"><span class="highlight__num">6+</span><span>Anos em tech</span></div>
+          <div class="highlight"><span class="highlight__num">18M+</span><span>Usuários impactados</span></div>
           <div class="highlight"><span class="highlight__num">∞</span><span>Cafés tomados</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJETOS -->
-  <section id="projetos" class="section section--alt">
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia" class="section section--alt">
     <div class="container">
-      <h2 class="section__title"><span class="section__index">02.</span> Projetos em destaque</h2>
+      <h2 class="section__title"><span class="section__index">02.</span> Experiência profissional</h2>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__period">jun/2024 — atualmente</div>
+          <h3 class="timeline__role">Product Owner &amp; Coordenadora de Desenvolvimento</h3>
+          <div class="timeline__company">eSapiens Tecnologia S.A. · Sexlog</div>
+          <p class="timeline__desc">
+            Responsável pela equipe de produto do Sexlog, rede social com mais de 18 milhões
+            de usuários. Defino funcionalidades representando stakeholders e usuários, gerencio
+            e priorizo backlog, e dirijo o crescimento do principal produto da casa através de
+            análise de dados e discovery de mercado.
+          </p>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__period">jun/2021 — atualmente</div>
+          <h3 class="timeline__role">Product Designer</h3>
+          <div class="timeline__company">eSapiens Tecnologia S.A. · Sexlog</div>
+          <p class="timeline__desc">
+            Conduzo o planejamento estratégico do produto em conjunto com stakeholders.
+            Uso pesquisa quantitativa e qualitativa, testes de usabilidade, interpretação de
+            testes A/B, análise de métricas e design thinking para resolver os principais
+            desafios dos usuários.
+          </p>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__period">out/2019 — jun/2021</div>
+          <h3 class="timeline__role">Estagiária de Data Science</h3>
+          <div class="timeline__company">eSapiens Tecnologia S.A.</div>
+          <p class="timeline__desc">
+            Análises de dados para os seis produtos da empresa. Desenvolvi do zero uma
+            inteligência artificial para identificar mensagens de spam no chat do Sexlog,
+            ampliando minha vivência em machine learning.
+          </p>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__period">nov/2018 — out/2019</div>
+          <h3 class="timeline__role">Estagiária em Desenvolvimento de Software</h3>
+          <div class="timeline__company">ABC 71 · ERP Omega</div>
+          <p class="timeline__desc">
+            Primeira experiência prática com programação, trabalhando com C++ e MySQL.
+            Executei ordens de serviço sob supervisão de desenvolvedores sêniores.
+          </p>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__period">mai/2018 — nov/2018</div>
+          <h3 class="timeline__role">Analista de Suporte ao Cliente</h3>
+          <div class="timeline__company">Jurid TI</div>
+          <p class="timeline__desc">
+            Suporte a clientes de produtos para gestão de processos jurídicos.
+            Registrava ordens de serviço para o time de dev e tive primeiro contato com SQL.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="section">
+    <div class="container">
+      <h2 class="section__title"><span class="section__index">03.</span> Projetos em destaque</h2>
       <div class="projects" id="projectsGrid">
         <!-- preenchido via JS -->
       </div>
@@ -82,39 +148,66 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section">
+  <section id="skills" class="section section--alt">
     <div class="container">
-      <h2 class="section__title"><span class="section__index">03.</span> Skills</h2>
+      <h2 class="section__title"><span class="section__index">04.</span> Skills</h2>
       <div class="skills">
         <div class="skill-group">
           <h3>Produto</h3>
           <ul>
-            <li>Product Discovery</li>
-            <li>Roadmap &amp; Priorização</li>
-            <li>OKRs &amp; Métricas</li>
-            <li>Backlog Management</li>
-            <li>Stakeholder Management</li>
+            <li>Priorização (WSJF, RICE, Kano)</li>
+            <li>Metodologias ágeis (Scrum, Kanban)</li>
+            <li>Roadmapping curto/médio/longo prazo</li>
+            <li>User Stories &amp; critérios de aceite</li>
+            <li>Métricas SaaS, KPIs &amp; OKRs</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Design</h3>
+          <h3>Discovery &amp; Design</h3>
           <ul>
-            <li>UX / UI Design</li>
-            <li>Design System</li>
-            <li>Prototipação</li>
-            <li>User Research</li>
-            <li>Wireframes &amp; Fluxos</li>
+            <li>Design Thinking</li>
+            <li>Entrevistas com usuários</li>
+            <li>Criação de personas</li>
+            <li>Testes A/B &amp; usabilidade</li>
+            <li>Pesquisa quanti &amp; quali</li>
+            <li>UI de alta fidelidade</li>
+            <li>Protótipos navegáveis</li>
           </ul>
         </div>
         <div class="skill-group">
           <h3>Ferramentas</h3>
           <ul>
-            <li>Figma</li>
-            <li>Jira &amp; Confluence</li>
-            <li>Notion</li>
-            <li>Miro</li>
-            <li>Analytics &amp; Hotjar</li>
+            <li>Figma &amp; Sketch</li>
+            <li>Marvel · Zeplin</li>
+            <li>Google Analytics</li>
+            <li>Mixpanel</li>
+            <li>Power BI</li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAÇÃO -->
+  <section id="formacao" class="section">
+    <div class="container">
+      <h2 class="section__title"><span class="section__index">05.</span> Formação &amp; idiomas</h2>
+      <div class="education">
+        <div class="education__card">
+          <div class="education__icon">🎓</div>
+          <div>
+            <h3>Bacharelado em Sistemas de Informação</h3>
+            <p class="education__school">Universidade Estadual Paulista — UNESP</p>
+            <p class="education__period">2017 — 2021</p>
+          </div>
+        </div>
+        <div class="education__card">
+          <div class="education__icon">🌎</div>
+          <div>
+            <h3>Idiomas</h3>
+            <p class="education__school"><strong>Português</strong> · nativo</p>
+            <p class="education__school"><strong>Inglês</strong> · leitura, escrita e escuta</p>
+          </div>
         </div>
       </div>
     </div>
@@ -123,22 +216,22 @@
   <!-- CONTATO -->
   <section id="contato" class="section section--alt">
     <div class="container contact">
-      <h2 class="section__title"><span class="section__index">04.</span> Vamos conversar</h2>
+      <h2 class="section__title"><span class="section__index">06.</span> Vamos conversar</h2>
       <p class="contact__lead">
         Tem um projeto em mente, uma oportunidade ou só quer trocar uma ideia? Manda mensagem.
       </p>
-      <a href="mailto:seu-email@exemplo.com" class="btn btn--primary btn--large">Enviar e-mail</a>
+      <a href="mailto:eloisabonatti@gmail.com" class="btn btn--primary btn--large">eloisabonatti@gmail.com</a>
       <div class="contact__social">
-        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
         <a href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+        <a href="tel:+5514998550536">(14) 99855-0536</a>
+        <a href="mailto:eloisabonatti@gmail.com">E-mail</a>
       </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <p>Feito com 💖 por Eloisa · <span id="year"></span></p>
+      <p>Feito com 💖 por Eloisa Bonatti · <span id="year"></span></p>
     </div>
   </footer>
 
