@@ -1,0 +1,11 @@
+[
+  {
+    "id": "exemplo-1",
+    "title": "Nome do Projeto",
+    "description": "Breve descrição do que esse projeto faz e do impacto.",
+    "tags": ["React", "TypeScript"],
+    "link": "",
+    "repo": "",
+    "image": ""
+  }
+]
