@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portifólio pessoal — projetos, experiência e contato." />
+  <title>Portifólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">&lt;/&gt; portifólio</a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <p class="hero__hello">👋 Olá, eu sou</p>
+      <h1 class="hero__name">Seu Nome</h1>
+      <h2 class="hero__role">Desenvolvedor &amp; Criador de Produto</h2>
+      <p class="hero__bio">
+        Construo produtos digitais focados em experiência do usuário, performance e impacto.
+        Aqui você encontra meus principais projetos, skills e onde me achar.
+      </p>
+      <div class="hero__ctas">
+        <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+        <a href="#contato" class="btn btn--ghost">Entrar em contato</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2 class="section__title"><span class="section__index">01.</span> Sobre mim</h2>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            Sou apaixonado por transformar ideias em produtos reais. Tenho experiência em
+            <strong>desenvolvimento web</strong>, <strong>design de produto</strong> e
+            <strong>liderança de times</strong> de tecnologia.
+          </p>
+          <p>
+            Adoro trabalhar na interseção entre código, design e negócio — sempre buscando
+            entregar soluções simples para problemas complexos.
+          </p>
+        </div>
+        <div class="about__highlights">
+          <div class="highlight"><span class="highlight__num">5+</span><span>Anos de experiência</span></div>
+          <div class="highlight"><span class="highlight__num">20+</span><span>Projetos entregues</span></div>
+          <div class="highlight"><span class="highlight__num">∞</span><span>Cafés tomados</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title"><span class="section__index">02.</span> Projetos em destaque</h2>
+      <div class="projects" id="projectsGrid">
+        <!-- preenchido via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section__title"><span class="section__index">03.</span> Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul><li>React</li><li>TypeScript</li><li>Next.js</li><li>Tailwind CSS</li><li>HTML / CSS</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul><li>Node.js</li><li>Python</li><li>PostgreSQL</li><li>REST APIs</li><li>GraphQL</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Produto &amp; Outros</h3>
+          <ul><li>Product Discovery</li><li>UX / Design</li><li>Git &amp; GitHub</li><li>Figma</li><li>AI / LLMs</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section section--alt">
+    <div class="container contact">
+      <h2 class="section__title"><span class="section__index">04.</span> Vamos conversar</h2>
+      <p class="contact__lead">
+        Tem um projeto em mente, uma oportunidade ou só quer trocar uma ideia? Manda mensagem.
+      </p>
+      <a href="mailto:seu-email@exemplo.com" class="btn btn--primary btn--large">Enviar e-mail</a>
+      <div class="contact__social">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Feito com ❤️ por Seu Nome · <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="src/utils/main.js"></script>
+</body>
+</html>
