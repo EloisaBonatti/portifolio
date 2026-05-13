@@ -262,6 +262,7 @@ img { max-width: 100%; display: block; }
 /* ============ CONTATO ============ */
 .contact { text-align: center; }
 .contact__lead { color: var(--text); max-width: 500px; margin: 0 auto 40px; font-size: 1.05rem; opacity: 0.9; }
+.contact__ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 .contact__social { margin-top: 40px; display: flex; gap: 24px; justify-content: center; }
 .contact__social a { color: var(--text-muted); font-size: 0.9rem; }
 .contact__social a:hover { color: var(--accent); }
