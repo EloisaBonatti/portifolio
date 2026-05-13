@@ -150,6 +150,52 @@
   flex-wrap: wrap; padding: 40px 24px 80px;
 }
 
+/* AUTHOR BADGE */
+.author-badge {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  padding: 10px 18px;
+  background: var(--accent);
+  color: var(--bg);
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow);
+}
+
+/* WINNER CARD */
+.winner-card {
+  background: linear-gradient(135deg, var(--accent-soft), transparent);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 28px;
+  margin: 24px 0;
+  position: relative;
+}
+.winner-card__badge {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  padding: 6px 14px;
+  background: var(--accent);
+  color: var(--bg);
+  border-radius: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.winner-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+.winner-card p {
+  color: var(--text);
+  margin: 0;
+}
+
 /* SOON CARD */
 .project--soon {
   opacity: 0.65; cursor: not-allowed; pointer-events: none;
