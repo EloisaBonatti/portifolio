@@ -158,25 +158,68 @@ img { max-width: 100%; display: block; }
   width: 2px; background: linear-gradient(var(--accent), transparent);
 }
 .timeline__item {
-  position: relative; margin-bottom: 40px;
+  position: relative; margin-bottom: 32px;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 24px 28px;
-  transition: all var(--transition);
+  border-radius: var(--radius); padding: 28px;
+  transition: border-color var(--transition);
 }
 .timeline__item::before {
-  content: ""; position: absolute; left: -30px; top: 28px;
-  width: 18px; height: 18px; border-radius: 50%;
+  content: ""; position: absolute; left: -30px; top: 32px;
+  width: 16px; height: 16px; border-radius: 50%;
   background: var(--bg); border: 3px solid var(--accent);
   box-shadow: 0 0 0 4px var(--accent-soft);
 }
-.timeline__item:hover { border-color: var(--accent); transform: translateX(4px); }
-.timeline__period {
-  font-family: 'JetBrains Mono', monospace; font-size: 0.8rem;
-  color: var(--accent); margin-bottom: 8px;
+.timeline__item:hover { border-color: var(--accent); }
+
+/* Header: empresa + tempo de permanência */
+.timeline__header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 16px; flex-wrap: wrap;
+  padding-bottom: 18px; margin-bottom: 18px;
+  border-bottom: 1px solid var(--border);
 }
-.timeline__role { font-size: 1.2rem; font-weight: 700; margin-bottom: 4px; }
-.timeline__company { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 12px; font-weight: 500; }
-.timeline__desc { color: var(--text-muted); font-size: 0.95rem; }
+.timeline__company-name {
+  font-size: 1.25rem; font-weight: 700; margin-bottom: 4px;
+}
+.timeline__company-sub {
+  color: var(--text-muted); font-size: 0.9rem;
+}
+.timeline__tenure {
+  display: flex; flex-direction: column; align-items: flex-end; gap: 6px;
+}
+.timeline__period {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem; color: var(--text-muted);
+}
+.timeline__badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem; font-weight: 600;
+  padding: 4px 12px; border-radius: 20px;
+  background: var(--accent); color: var(--bg);
+}
+.timeline__badge--soft {
+  background: transparent; color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+/* Cargos dentro da empresa */
+.timeline__roles {
+  display: flex; flex-direction: column; gap: 20px;
+}
+.role { padding-left: 16px; border-left: 2px solid var(--border); transition: border-color var(--transition); }
+.role:hover { border-left-color: var(--accent); }
+.role__period {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem; color: var(--accent); margin-bottom: 6px;
+}
+.role__title {
+  font-size: 1rem; font-weight: 600; margin-bottom: 8px;
+}
+.role__desc { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; }
+
+@media (max-width: 640px) {
+  .timeline__tenure { align-items: flex-start; }
+}
 
 /* ============ FORMAÇÃO ============ */
 .education {
