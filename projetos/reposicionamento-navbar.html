@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case: como o reposicionamento de uma opção do menu aumentou os uploads de mídia no Sexlog sem prejudicar a experiência." />
+  <title>Reposicionamento na navbar · Case de Produto · Eloisa Bonatti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/main.css" />
+  <link rel="stylesheet" href="../src/styles/case.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">✦ eloisa</a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="../index.html#sobre">Sobre</a></li>
+          <li><a href="../index.html#projetos">Projetos</a></li>
+          <li><a href="../index.html#experiencia">Experiência</a></li>
+          <li><a href="../index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+
+  <!-- CASE HERO -->
+  <section class="case-hero">
+    <div class="container">
+      <a href="../index.html#projetos" class="back-link">← Voltar para projetos</a>
+      <div class="case-hero__icon">🧩</div>
+      <p class="case-hero__category">Case de Produto · Sexlog</p>
+      <h1 class="case-hero__title">Reposicionamento de botões na navbar</h1>
+      <p class="case-hero__subtitle">
+        Como o reposicionamento de <strong>uma única opção do menu</strong>
+        multiplicou os cliques no botão de publicar mídia em <strong>4x</strong>,
+        aumentou o total de uploads e <strong>não prejudicou</strong> a experiência
+        do usuário em nenhuma outra área.
+      </p>
+    </div>
+  </section>
+
+  <!-- CASE BODY -->
+  <article class="case-body container">
+
+    <!-- TL;DR -->
+    <section class="case-section">
+      <h2><span class="case-section__num">00</span> TL;DR</h2>
+      <div class="callout">
+        <p>
+          Movi o atalho de <strong>publicar mídia</strong> de um canto pouco
+          visível da tela para o <strong>centro da navbar inferior</strong>, no
+          formato de um botão proeminente com ícone de “+”. Rodei um teste A/B
+          com 3 grupos e, no fim, os cliques no botão de publicar saltaram de
+          <strong>6.631 para 28.783</strong>, o volume total de uploads cresceu
+          e nenhuma outra métrica da navbar sofreu queda relevante.
+          <strong>Grupo B venceu</strong> e virou padrão para toda a base.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTEXTO -->
+    <section class="case-section">
+      <h2><span class="case-section__num">01</span> Contexto</h2>
+      <p>
+        O Sexlog é uma rede social com mais de <strong>18 milhões de usuários</strong>,
+        e o conteúdo gerado pela própria comunidade é o coração do produto.
+        Quanto mais usuários postam fotos e vídeos, mais vivo o feed fica, mais
+        engajamento, mais retorno e mais conversão.
+      </p>
+      <p>
+        Olhando para os dados de comportamento, percebi que o atalho para
+        <strong>publicar nova mídia</strong> estava em uma posição pouco visível:
+        no canto superior esquerdo da home, representado por um ícone discreto
+        de câmera com “+”. Os usuários nem sempre encontravam essa porta de
+        entrada para postar.
+      </p>
+    </section>
+
+    <!-- HIPÓTESE -->
+    <section class="case-section">
+      <h2><span class="case-section__num">02</span> Hipótese</h2>
+      <div class="hypotheses">
+        <div class="hypothesis">
+          <div class="hypothesis__label">Hipótese</div>
+          <p>
+            Se o atalho de <strong>publicar mídia</strong> for movido para uma
+            posição mais nobre da navbar (centro do rodapé, com destaque visual),
+            o volume de cliques e de uploads vai aumentar, <strong>sem prejudicar
+            o acesso a outras funções</strong> da navegação.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESENHO DO TESTE -->
+    <section class="case-section">
+      <h2><span class="case-section__num">03</span> Desenho do teste</h2>
+      <p>
+        Como qualquer mudança na navbar afeta todos os fluxos do produto, montei
+        um teste A/B com <strong>3 grupos</strong> para isolar o efeito real do
+        reposicionamento:
+      </p>
+      <div class="groups">
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Grupo A · 30%</span>
+            <span class="group__role">Controle</span>
+          </div>
+          <h3>Navbar atual</h3>
+          <p class="group__hypo">Baseline com métricas.</p>
+          <p>
+            Layout antigo: botão de publicar mídia no canto superior esquerdo
+            (ícone de câmera com “+”), atalho de perfil no canto inferior direito.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Grupo B · 30%</span>
+            <span class="group__role">Teste</span>
+          </div>
+          <h3>Botão de publicar no centro</h3>
+          <p class="group__hypo">Variação proposta.</p>
+          <p>
+            Botão de publicar movido para o centro da navbar inferior, em forma
+            de “+” com destaque visual. Atalho de perfil deslocado para o canto
+            superior direito.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Grupo C · 40%</span>
+            <span class="group__role">Controle silencioso</span>
+          </div>
+          <h3>Sem coleta de métricas</h3>
+          <p class="group__hypo">Reserva de base.</p>
+          <p>
+            Restante dos usuários mantido no layout antigo, sem instrumentação,
+            para garantir uma amostra grande do produto rodando como sempre rodou
+            durante o teste.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESULTADO -->
+    <section class="case-section">
+      <h2><span class="case-section__num">04</span> Resultado &amp; números</h2>
+      <div class="winner-card">
+        <div class="winner-card__badge">🏆 Grupo Vencedor</div>
+        <h3>Grupo B · Botão de publicar no centro da navbar</h3>
+        <p>
+          O reposicionamento <strong>multiplicou os cliques no atalho de publicar
+          em mais de 4x</strong>, aumentou o volume total de uploads e <strong>não
+          gerou queda relevante</strong> em nenhuma outra função da navbar.
+        </p>
+      </div>
+
+      <p>Os destaques do teste:</p>
+      <ul class="bullet-list">
+        <li>
+          <strong>Cliques no botão de publicar:</strong> de
+          <strong>6.631 para 28.783</strong> (mais de <strong>4x</strong>).
+        </li>
+        <li>
+          <strong>Cliques no pré-perfil:</strong> de 47.550 para 39.954.
+          Houve queda, mas pequena e considerada um trade-off aceitável diante
+          do ganho em uploads.
+        </li>
+        <li>
+          <strong>Total de uploads:</strong> subiu de
+          <strong>131.320 (A) para 138.573 (B)</strong>, sem variação na taxa
+          de usuários que postaram (23,83% → 23,85%). Ou seja: mais uploads
+          por usuário ativo.
+        </li>
+        <li>
+          <strong>Outras métricas da navbar</strong> (explorar, mensagens,
+          notificação, buscas) ficaram estáveis ou levemente positivas, mostrando
+          que o reposicionamento não canibalizou outros fluxos.
+        </li>
+      </ul>
+
+      <div class="callout">
+        <p>
+          <strong>Decisão:</strong> Grupo B declarado vencedor e o novo layout
+          virou padrão para toda a base.
+        </p>
+      </div>
+    </section>
+
+    <!-- APRENDIZADOS -->
+    <section class="case-section">
+      <h2><span class="case-section__num">05</span> Aprendizados</h2>
+      <ul class="bullet-list">
+        <li>
+          <strong>Hierarquia visual é alavanca de comportamento:</strong> mover um
+          atalho para uma posição nobre da navbar pode mudar a curva de uso de
+          uma feature inteira, sem qualquer mudança de produto por baixo.
+        </li>
+        <li>
+          <strong>Trade-off aceitável:</strong> nem todo ganho vem de graça. A pequena
+          queda no pré-perfil mostrou que o usuário trocou uma ação por outra mais
+          valiosa para o negócio.
+        </li>
+        <li>
+          <strong>Olhar a navbar como um todo:</strong> ao invés de medir só o
+          botão movido, comparei o desempenho de todos os atalhos para ter
+          certeza de que a mudança não estava só roubando cliques de outro lugar.
+        </li>
+        <li>
+          <strong>Decisão rápida com base em dados:</strong> com a evidência
+          clara, viramos o teste para a base toda sem precisar de mais ciclos
+          de iteração.
+        </li>
+      </ul>
+    </section>
+
+  </article>
+
+  <!-- NAV ENTRE PROJETOS -->
+  <section class="case-nav container">
+    <a href="../index.html#projetos" class="btn btn--ghost">← Todos os projetos</a>
+    <a href="../index.html#contato" class="btn btn--primary">Vamos conversar →</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Feito com 💖 por Eloisa Bonatti · <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="../src/utils/main.js"></script>
+</body>
+</html>

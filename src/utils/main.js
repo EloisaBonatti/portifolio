@@ -12,14 +12,14 @@ const projects = [
     available: true
   },
   {
-    icon: "🎨",
-    title: "Design System Sexlog",
-    subtitle: "Tokens, componentes e governança",
-    description: "Construção do design system da rede social: tokens compartilhados entre Figma e código, biblioteca de componentes versionada e processo de contribuição entre design e dev.",
-    tags: ["Design System", "Figma", "Governança"],
-    impact: "Consistência em 18M+ usuários",
-    link: "#",
-    available: false
+    icon: "🧩",
+    title: "Reposicionamento de botões na navbar",
+    subtitle: "Pequena mudança, grande impacto",
+    description: "Como o reposicionamento de uma opção do menu aumentou a quantidade geral de uploads de mídia no Sexlog sem prejudicar a experiência do usuário. Teste A/B com 3 grupos e decisão baseada em dados.",
+    tags: ["A/B Test", "UX", "Conversão"],
+    impact: "Cliques no botão de publicar 4x maiores · sem perda em outros pontos",
+    link: "projetos/reposicionamento-navbar.html",
+    available: true
   },
   {
     icon: "🧭",
