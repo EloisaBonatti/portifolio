@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case do projeto Espiadinhas — feature de vídeos verticais que virou o super trunfo do Sexlog." />
+  <title>Espiadinhas — Case de Produto · Eloisa Bonatti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/main.css" />
+  <link rel="stylesheet" href="../src/styles/case.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">✦ eloisa</a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="../index.html#sobre">Sobre</a></li>
+          <li><a href="../index.html#experiencia">Experiência</a></li>
+          <li><a href="../index.html#projetos">Projetos</a></li>
+          <li><a href="../index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+
+  <!-- CASE HERO -->
+  <section class="case-hero">
+    <div class="container">
+      <a href="../index.html#projetos" class="back-link">← Voltar para projetos</a>
+      <div class="case-hero__icon">🎬</div>
+      <p class="case-hero__category">Case de Produto · Sexlog</p>
+      <h1 class="case-hero__title">Espiadinhas</h1>
+      <p class="case-hero__subtitle">
+        A feature de vídeos verticais que virou o <strong>super trunfo do Sexlog</strong>
+        e como conduzi um teste A/B com 4 grupos para maximizar a receita.
+      </p>
+      <div class="case-meta">
+        <div><span class="case-meta__label">Meu papel</span><span>Product Owner &amp; Product Designer</span></div>
+        <div><span class="case-meta__label">Produto</span><span>Sexlog · 18M+ usuários</span></div>
+        <div><span class="case-meta__label">Tipo</span><span>Discovery + Teste A/B/C/D</span></div>
+        <div><span class="case-meta__label">Stack</span><span>Discovery · UX · Dados · A/B</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE BODY -->
+  <article class="case-body container">
+
+    <!-- TL;DR -->
+    <section class="case-section">
+      <h2><span class="case-section__num">00</span> TL;DR</h2>
+      <div class="callout">
+        <p>
+          Espiadinhas é a feature de vídeos verticais do Sexlog. Nasceu como aposta em
+          engajamento e virou um dos principais gatilhos de conversão do produto.
+          Depois do sucesso inicial, conduzi um <strong>teste A/B com 4 grupos</strong>
+          comparando o modelo atual (frustração total), liberação total e dois modelos
+          freemium para descobrir qual estratégia gera mais receita.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTEXTO -->
+    <section class="case-section">
+      <h2><span class="case-section__num">01</span> Contexto</h2>
+      <p>
+        O Espiadinhas hoje é o super trunfo do Sexlog — uma feature de vídeos verticais
+        que rapidamente se consolidou como uma das experiências mais consumidas do produto.
+        Diante do sucesso, surgiu a pergunta de negócio:
+      </p>
+      <p class="quote">
+        “Estamos surfando uma onda gigante. Como capturar mais receita disso sem matar
+        a experiência?”
+      </p>
+    </section>
+
+    <!-- HIPÓTESES -->
+    <section class="case-section">
+      <h2><span class="case-section__num">02</span> Hipóteses</h2>
+      <p>Coloquei duas hipóteses para serem testadas em paralelo:</p>
+      <div class="hypotheses">
+        <div class="hypothesis">
+          <div class="hypothesis__label">Hipótese 1</div>
+          <p>
+            O Espiadinhas acrescenta valor à experiência geral do site, trazendo
+            <strong>assinaturas tardias</strong> — não necessariamente no gatilho
+            de frustração.
+          </p>
+        </div>
+        <div class="hypothesis">
+          <div class="hypothesis__label">Hipótese 2</div>
+          <p>
+            O Espiadinhas é um <strong>bom gatilho de conversão</strong> e dá pra
+            maximizar a receita oferecendo uma experiência <strong>freemium</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESENHO DO TESTE -->
+    <section class="case-section">
+      <h2><span class="case-section__num">03</span> Desenho do teste</h2>
+      <p>
+        Como mexer em regras de exibição para não-assinantes é sensível (o play de
+        vídeos é hoje um gatilho importante de assinatura), desenhei o teste com
+        cuidado pra não comprometer a receita atual antes de termos sinal:
+      </p>
+      <ul class="bullet-list">
+        <li><strong>Público:</strong> apenas usuários novos (criaram conta depois do deploy)</li>
+        <li><strong>Divisão:</strong> 4 grupos iguais, 25% cada</li>
+        <li><strong>Constante:</strong> o gatilho do Espiadinhas no explorar/novidades segue igual para os 4 grupos</li>
+      </ul>
+    </section>
+
+    <!-- GRUPOS -->
+    <section class="case-section">
+      <h2><span class="case-section__num">04</span> Os 4 grupos</h2>
+      <div class="groups">
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Grupo A · 25%</span>
+            <span class="group__role">Controle</span>
+          </div>
+          <h3>Frustração total</h3>
+          <p class="group__hypo">Mantém o funcionamento atual.</p>
+          <p>
+            Ao clicar no Espiadinhas, o usuário é frustrado com a modal de assinatura.
+            Serve como baseline para comparar com as outras três variações.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Grupo B · 25%</span>
+            <span class="group__role">Hipótese 1</span>
+          </div>
+          <h3>Liberação total</h3>
+          <p class="group__hypo">Testa se o Espiadinhas gera assinaturas tardias.</p>
+          <p>
+            Todos os vídeos liberados, mesmo para quem não assina. Se a Hipótese 1
+            estiver certa, o usuário consome valor e converte mais tarde — em outros
+            pontos do produto.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Grupo C · 25%</span>
+            <span class="group__role">Hipótese 2 — Freemium A</span>
+          </div>
+          <h3>5 vídeos por 24h</h3>
+          <p class="group__hypo">Testa freemium por quantidade.</p>
+          <p>
+            Usuário não-assinante vê 5 vídeos a cada 24h. No sexto, o scroll trava,
+            a thumb fica com blur e aparece o botão “Seja VIP” levando à modal de
+            assinatura. Mistura prova de valor + frustração calibrada.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Grupo D · 25%</span>
+            <span class="group__role">Hipótese 2 — Freemium B</span>
+          </div>
+          <h3>Vídeos &lt; 10s liberados</h3>
+          <p class="group__hypo">Testa freemium por duração.</p>
+          <p>
+            Vídeos com menos de 10s ficam liberados (~30% dos elegíveis, pela amostragem);
+            os maiores aparecem travados com blur e gatilho de “Seja VIP”. Scroll
+            funciona indefinidamente, intercalando livre e bloqueado.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MÉTRICAS -->
+    <section class="case-section">
+      <h2><span class="case-section__num">05</span> Métricas acompanhadas</h2>
+      <p>
+        Defini um conjunto de métricas que olha receita, comportamento e retenção
+        — pra não otimizar só a conversão de curto prazo às custas do engajamento:
+      </p>
+      <div class="metrics">
+        <div class="metric"><span>💰</span><div><strong>Conversão geral</strong><br>Comparação entre os 4 grupos</div></div>
+        <div class="metric"><span>⏱️</span><div><strong>Tempo de retenção de tela</strong><br>Quanto cada grupo segura o usuário</div></div>
+        <div class="metric"><span>📹</span><div><strong>Vídeos vistos / scroll</strong><br>Profundidade de consumo</div></div>
+        <div class="metric"><span>🔁</span><div><strong>Retention D+1 e D+7 do site</strong><br>O usuário volta ao Sexlog?</div></div>
+        <div class="metric"><span>🎯</span><div><strong>Retention D+1 e D+7 da feature</strong><br>O usuário volta ao Espiadinhas?</div></div>
+      </div>
+    </section>
+
+    <!-- APRENDIZADOS -->
+    <section class="case-section">
+      <h2><span class="case-section__num">06</span> Aprendizados de processo</h2>
+      <ul class="bullet-list">
+        <li>
+          <strong>Não casar com a hipótese inicial:</strong> a feature nasceu pra
+          ganhar tempo de tela e o dado mostrou que ela era também um dos melhores
+          gatilhos de conversão. Estar disposta a renomear o valor da feature foi
+          chave.
+        </li>
+        <li>
+          <strong>Testar em camadas:</strong> validar a feature primeiro, e só depois
+          desenhar um teste de monetização, isola variáveis e protege a receita
+          existente.
+        </li>
+        <li>
+          <strong>Restringir o público:</strong> rodar só com usuários novos
+          permitiu mexer em regras sensíveis sem canibalizar a base atual.
+        </li>
+        <li>
+          <strong>Métricas de receita + comportamento + retenção:</strong> conversão
+          sozinha pode esconder degradação de experiência. Olhar D+1 e D+7 da feature
+          e do site evita otimizar pro curto prazo.
+        </li>
+      </ul>
+    </section>
+
+  </article>
+
+  <!-- NAV ENTRE PROJETOS -->
+  <section class="case-nav container">
+    <a href="../index.html#projetos" class="btn btn--ghost">← Todos os projetos</a>
+    <a href="../index.html#contato" class="btn btn--primary">Vamos conversar →</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Feito com 💖 por Eloisa Bonatti · <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="../src/utils/main.js"></script>
+</body>
+</html>

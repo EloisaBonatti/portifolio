@@ -1,53 +1,35 @@
 // ============ DADOS DOS PROJETOS ============
-// Edite aqui pra adicionar seus projetos reais.
+// Cada projeto pode ter uma página de detalhe em /projetos/<slug>.html
 const projects = [
   {
-    icon: "🔍",
-    title: "Product Discovery — App Mobile",
-    description: "Liderei a fase de discovery de um app B2C: entrevistas, jobs to be done, mapa de oportunidades e priorização de hipóteses.",
-    tags: ["Discovery", "Research", "JTBD"],
-    repo: "",
-    demo: ""
+    icon: "🎬",
+    title: "Espiadinhas",
+    subtitle: "Vídeos verticais como gatilho de conversão",
+    description: "Feature de vídeos curtos criada para aumentar tempo de tela — virou o super trunfo do Sexlog. Conduzi um teste A/B com 4 grupos pra descobrir o modelo que maximiza receita.",
+    tags: ["Product Discovery", "A/B Test", "Freemium"],
+    impact: "↑ Tempo de tela · ↑ Conversão · Super trunfo do produto",
+    link: "projetos/espiadinhas.html",
+    available: true
   },
   {
     icon: "🎨",
-    title: "Design System",
-    description: "Construção de design system do zero — tokens, componentes, documentação e governança entre design e dev.",
-    tags: ["Design System", "Figma", "UI"],
-    repo: "",
-    demo: ""
-  },
-  {
-    icon: "📊",
-    title: "Redesign de Dashboard",
-    description: "Repensei a jornada de um dashboard analítico, reduzindo cliques em 40% e melhorando o NPS em 25 pontos.",
-    tags: ["UX", "Dashboard", "B2B"],
-    repo: "",
-    demo: ""
-  },
-  {
-    icon: "🚀",
-    title: "Lançamento de Feature",
-    description: "PO end-to-end: do problema à entrega. Definição de escopo, MVP, métricas de sucesso e iteração com base em dados.",
-    tags: ["Product Owner", "MVP", "OKRs"],
-    repo: "",
-    demo: ""
+    title: "Design System Sexlog",
+    subtitle: "Tokens, componentes e governança",
+    description: "Construção do design system da rede social — tokens compartilhados entre Figma e código, biblioteca de componentes versionada e processo de contribuição entre design e dev.",
+    tags: ["Design System", "Figma", "Governança"],
+    impact: "Consistência em 18M+ usuários",
+    link: "#",
+    available: false
   },
   {
     icon: "🧭",
-    title: "Onboarding Repensado",
-    description: "Redesign do fluxo de onboarding com testes de usabilidade — aumentou ativação em 35% nas duas primeiras semanas.",
-    tags: ["UX Research", "Activation", "Flow"],
-    repo: "",
-    demo: ""
-  },
-  {
-    icon: "✨",
-    title: "Este portifólio",
-    description: "Site pessoal feito do zero, com tema rosa, dark/light mode e foco em apresentar trabalho de forma clara e bonita.",
-    tags: ["UI", "Web", "Design"],
-    repo: "",
-    demo: ""
+    title: "Redesign de Onboarding",
+    subtitle: "Discovery + redesign do fluxo de novos usuários",
+    description: "Pesquisa com usuários, mapeamento de fricções e redesign completo do fluxo de cadastro e primeiros passos no produto.",
+    tags: ["UX Research", "Activation", "Discovery"],
+    impact: "↑ Ativação na primeira semana",
+    link: "#",
+    available: false
   }
 ];
 
@@ -55,18 +37,17 @@ const projects = [
 const grid = document.getElementById("projectsGrid");
 if (grid) {
   grid.innerHTML = projects.map(p => `
-    <article class="project">
+    <a href="${p.link}" class="project ${p.available ? 'project--clickable' : 'project--soon'}">
       <div class="project__icon">${p.icon}</div>
       <h3 class="project__title">${p.title}</h3>
+      <p class="project__subtitle">${p.subtitle}</p>
       <p class="project__desc">${p.description}</p>
       <div class="project__tags">
         ${p.tags.map(t => `<span class="project__tag">${t}</span>`).join("")}
       </div>
-      <div class="project__links">
-        ${p.repo ? `<a href="${p.repo}" target="_blank" rel="noopener">Código →</a>` : ""}
-        ${p.demo ? `<a href="${p.demo}" target="_blank" rel="noopener">Ver case →</a>` : ""}
-      </div>
-    </article>
+      <div class="project__impact">${p.impact}</div>
+      <div class="project__cta">${p.available ? 'Ver case completo →' : 'Em breve'}</div>
+    </a>
   `).join("");
 }
 
@@ -75,7 +56,7 @@ const themeBtn = document.getElementById("themeToggle");
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "light") {
   document.documentElement.setAttribute("data-theme", "light");
-  themeBtn.textContent = "☀️";
+  if (themeBtn) themeBtn.textContent = "☀️";
 }
 themeBtn?.addEventListener("click", () => {
   const isLight = document.documentElement.getAttribute("data-theme") === "light";
@@ -91,4 +72,5 @@ themeBtn?.addEventListener("click", () => {
 });
 
 // ============ ANO ATUAL ============
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();

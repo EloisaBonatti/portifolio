@@ -123,26 +123,33 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius); padding: 28px;
   transition: all var(--transition);
   display: flex; flex-direction: column;
+  color: var(--text);
 }
+.project--clickable { cursor: pointer; }
 .project:hover {
   transform: translateY(-6px); border-color: var(--accent);
   box-shadow: var(--shadow);
 }
 .project__icon { font-size: 2rem; margin-bottom: 18px; }
-.project__title { font-size: 1.3rem; font-weight: 700; margin-bottom: 10px; }
-.project__desc { color: var(--text-muted); font-size: 0.95rem; flex: 1; margin-bottom: 20px; }
-.project__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.project__title { font-size: 1.3rem; font-weight: 700; margin-bottom: 6px; }
+.project__subtitle { color: var(--accent); font-size: 0.85rem; margin-bottom: 14px; font-family: 'JetBrains Mono', monospace; }
+.project__desc { color: var(--text-muted); font-size: 0.95rem; flex: 1; margin-bottom: 18px; }
+.project__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
 .project__tag {
   font-family: 'JetBrains Mono', monospace; font-size: 0.75rem;
   color: var(--accent); padding: 4px 10px;
   background: var(--accent-soft); border-radius: 20px;
 }
-.project__links { display: flex; gap: 16px; }
-.project__links a {
-  font-size: 0.85rem; color: var(--text-muted);
-  border-bottom: 1px solid transparent;
+.project__impact {
+  font-size: 0.85rem; color: var(--text);
+  padding: 10px 14px; background: var(--accent-soft);
+  border-radius: 8px; margin-bottom: 16px; font-weight: 500;
 }
-.project__links a:hover { color: var(--accent); border-color: var(--accent); }
+.project__cta {
+  font-size: 0.9rem; color: var(--accent); font-weight: 600;
+  margin-top: auto;
+}
+.project:hover .project__cta { transform: translateX(4px); }
 
 /* ============ TIMELINE (EXPERIÊNCIA) ============ */
 .timeline { position: relative; padding-left: 30px; }
