@@ -115,7 +115,7 @@
   line-height: 1.7;
 }
 .bullet-list li::before {
-  content: "—"; color: var(--accent);
+  content: "›"; color: var(--accent);
   position: absolute; left: 0;
 }
 .bullet-list strong { color: var(--text); font-weight: 600; }
