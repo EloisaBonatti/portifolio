@@ -191,73 +191,100 @@
       </ul>
     </section>
 
+    <!-- ONBOARDING -->
+    <section class="case-section">
+      <h2><span class="case-section__num">05</span> Solução: visão geral</h2>
+      <p>
+        Onboarding curto com três telas comunicando os principais benefícios:
+        <strong>facilidade e segurança</strong>, <strong>controle por
+        categorias</strong> e <strong>modo evento</strong>. O usuário entende o
+        diferencial logo na primeira impressão.
+      </p>
+      <figure class="screenshot">
+        <img src="../public/cartaodinho/slide-05.jpg" alt="Telas de onboarding do Cartãodinho mostrando os benefícios principais" loading="lazy" />
+      </figure>
+    </section>
+
     <!-- TELAS PRINCIPAIS -->
     <section class="case-section">
-      <h2><span class="case-section__num">05</span> Principais fluxos</h2>
+      <h2><span class="case-section__num">06</span> Principais fluxos</h2>
       <p>
-        Duas telas concentram o uso diário do app: a <strong>home</strong>, com
-        carrossel de cartões, resumo da fatura atual e log das últimas transações;
-        e o <strong>relatório por categorias</strong>, com gráfico de pizza,
-        filtros por cartão e por período.
+        As quatro abas que sustentam a experiência principal: home com cartão e
+        fatura, log de transações, relatório por categorias e perfil. Acesso em
+        uma mão, com botão flutuante de adicionar transação sempre 16px acima
+        da navbar.
       </p>
-      <div class="screen-row screen-row--2">
-        <figure class="phone-screen">
-          <img src="../public/cartaodinho/home.jpg" alt="Tela home: cartões em carrossel, resumo da fatura e log de transações" loading="lazy" />
-          <span class="phone-caption">Home</span>
-        </figure>
-        <figure class="phone-screen">
-          <img src="../public/cartaodinho/relatorios.jpg" alt="Tela de relatório por categorias com gráfico de pizza" loading="lazy" />
-          <span class="phone-caption">Relatórios</span>
-        </figure>
-      </div>
+      <figure class="screenshot">
+        <img src="../public/cartaodinho/slide-14.jpg" alt="As 4 telas principais: home, transações, relatórios e perfil" loading="lazy" />
+      </figure>
+
+      <h3 class="screen-title">Adicionar transação</h3>
+      <p>
+        Bottom sheet com teclado numérico já aberto e foco no valor (primeira
+        ação esperada). Compra ou estorno, categoria por bottom sheet em camadas,
+        recorrência e parcelamento com defaults inteligentes pra reduzir cliques.
+      </p>
+      <figure class="screenshot">
+        <img src="../public/cartaodinho/slide-16.jpg" alt="Fluxo de adicionar transação" loading="lazy" />
+      </figure>
+
+      <h3 class="screen-title">Modo evento — recurso original</h3>
+      <p>
+        A funcionalidade que mais define o produto. Quando o usuário ativa o
+        Modo Evento (ex: viagem, reforma, casamento), os gastos daquele período
+        viram um agrupamento próprio, sem bagunçar as categorias normais. Cada
+        evento pode ser ativado em cartões específicos e aparece como filtro
+        próprio nos relatórios.
+      </p>
+      <figure class="screenshot">
+        <img src="../public/cartaodinho/slide-36.jpg" alt="Modo evento: ativação e cadastro" loading="lazy" />
+      </figure>
+
+      <h3 class="screen-title">Relatório por categorias</h3>
+      <p>
+        Gráfico de pizza ordenado do maior gasto para o menor, com filtros
+        multi-select por cartão e seletor de período (mês atual default, com
+        opção personalizada e filtro por evento quando há algum cadastrado).
+        Clique na categoria abre todos os gastos ordenados.
+      </p>
+      <figure class="screenshot">
+        <img src="../public/cartaodinho/slide-43.jpg" alt="Tela de relatório de categorias" loading="lazy" />
+      </figure>
     </section>
 
     <!-- MONETIZAÇÃO -->
     <section class="case-section">
-      <h2><span class="case-section__num">06</span> Como trabalhei a monetização</h2>
+      <h2><span class="case-section__num">07</span> Como trabalhei a monetização</h2>
       <p>
         Em vez de paywall genérico, calibrei um <strong>freemium em três
         camadas</strong>, cada uma posicionada num ponto específico da jornada
-        onde a dor é maior. As telas premium não interrompem o uso, elas
-        aparecem como oferta no momento em que o usuário sente a fricção que o
-        plano resolve.
+        onde a dor é maior. As telas premium não interrompem o uso: aparecem
+        como oferta no momento em que o usuário sente a fricção que o plano resolve.
       </p>
-      <div class="screen-row screen-row--3">
-        <figure class="phone-screen">
-          <img src="../public/cartaodinho/importar.jpg" alt="Tela de premium: importar fatura do cartão de crédito" loading="lazy" />
-          <span class="phone-caption">Importar fatura</span>
-        </figure>
-        <figure class="phone-screen">
-          <img src="../public/cartaodinho/escanear.jpg" alt="Tela de premium: escanear cupom de compra" loading="lazy" />
-          <span class="phone-caption">Escanear cupom</span>
-        </figure>
-        <figure class="phone-screen">
-          <img src="../public/cartaodinho/anuncios.jpg" alt="Tela de premium: navegar sem anúncios" loading="lazy" />
-          <span class="phone-caption">Sem anúncios</span>
-        </figure>
-      </div>
-      <ul class="bullet-list">
-        <li>
-          <strong>Importar fatura:</strong> aparece quando o usuário não-premium
-          tenta importar o PDF da fatura. Reduz drasticamente o tempo de
-          cadastro, então é a feature que justifica pagar pra quem usa muito.
-        </li>
-        <li>
-          <strong>Escanear cupom:</strong> oferecido no fluxo de adicionar
-          transação. Para quem registra compras na hora, troca digitar tudo por
-          uma foto do cupom.
-        </li>
-        <li>
-          <strong>Sem anúncios:</strong> usuários free veem um anúncio na
-          entrada do relatório. Oferece pular como gatilho de assinatura,
-          monetizando inclusive quem permanece grátis.
-        </li>
-      </ul>
+
+      <h3 class="screen-title">Importar fatura</h3>
+      <p>
+        Usuário não-premium que tenta importar o PDF da fatura é frustrado com
+        a oferta. Reduz drasticamente o tempo de cadastro, então é a feature
+        que justifica pagar pra quem usa muito.
+      </p>
+      <figure class="screenshot">
+        <img src="../public/cartaodinho/slide-69.jpg" alt="Tela de frustração para importar fatura, levando ao premium" loading="lazy" />
+      </figure>
+
+      <h3 class="screen-title">Escanear cupom</h3>
+      <p>
+        Oferecido no fluxo de adicionar transação. Para quem registra compras
+        na hora, troca digitar tudo por uma foto do cupom.
+      </p>
+      <figure class="screenshot">
+        <img src="../public/cartaodinho/slide-65.jpg" alt="Tela de frustração para escanear cupom, levando ao premium" loading="lazy" />
+      </figure>
     </section>
 
     <!-- ROADMAP -->
     <section class="case-section">
-      <h2><span class="case-section__num">07</span> Roadmap em 3 entregas</h2>
+      <h2><span class="case-section__num">08</span> Roadmap em 3 entregas</h2>
       <p>
         Para destravar valor cedo e amadurecer a complexidade no tempo certo,
         organizei o produto em três entregas:
@@ -307,7 +334,7 @@
 
     <!-- DECISÕES -->
     <section class="case-section">
-      <h2><span class="case-section__num">08</span> Algumas decisões de produto</h2>
+      <h2><span class="case-section__num">09</span> Algumas decisões de produto</h2>
       <ul class="bullet-list">
         <li>
           <strong>Default inteligente no cadastro:</strong> tipo "compra" marcado,
@@ -338,7 +365,7 @@
 
     <!-- ENCERRAMENTO -->
     <section class="case-section">
-      <h2><span class="case-section__num">09</span> O que esse projeto provou</h2>
+      <h2><span class="case-section__num">10</span> O que esse projeto provou</h2>
       <ul class="bullet-list">
         <li>
           <strong>Capacidade de conduzir um produto end-to-end sozinha,</strong>
