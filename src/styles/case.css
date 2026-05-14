@@ -273,6 +273,38 @@
   color: var(--accent);
 }
 
+/* Telas individuais lado a lado (mockups limpos) */
+.screen-row {
+  display: grid;
+  gap: 18px;
+  margin: 24px 0 32px;
+}
+.screen-row--2 { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
+.screen-row--3 { grid-template-columns: repeat(3, 1fr); }
+.phone-screen {
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--surface);
+  display: block;
+}
+.phone-screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.phone-caption {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+}
+@media (max-width: 640px) {
+  .screen-row--3 { grid-template-columns: 1fr; max-width: 280px; margin-left: auto; margin-right: auto; }
+  .screen-row--2 { grid-template-columns: 1fr; max-width: 280px; margin-left: auto; margin-right: auto; }
+}
+
 /* SOON CARD */
 .project--soon {
   opacity: 0.55;
