@@ -24,10 +24,10 @@ const projects = [
   {
     icon: "💳",
     title: "Cartãodinho",
-    subtitle: "Projeto pessoal: app de gestão de cartões",
-    description: "App pessoal que idealizei e desenhei do zero — da concepção e regras de negócio aos fluxos e telas. Gestão multicartão com modo evento, relatórios por categoria e roadmap de monetização em 3 fases.",
-    tags: ["Concepção", "Fluxos", "UI Mobile", "Projeto Pessoal"],
-    impact: "Produto desenhado end-to-end · 3 entregas planejadas",
+    subtitle: "Projeto freelance: app de gestão de cartões",
+    description: "Freelance para cliente externo. Conduzi do zero: discovery, pesquisa de mercado, proposta de valor, regras de negócio e desenho completo do produto. Gestão multicartão com Modo Evento e roadmap em 3 fases.",
+    tags: ["Freelance", "Discovery", "UI Mobile", "Concepção"],
+    impact: "Produto end-to-end para cliente externo · Roadmap em 3 entregas",
     link: "projetos/cartaodinho.html",
     available: true
   },
