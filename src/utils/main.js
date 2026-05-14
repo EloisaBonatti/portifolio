@@ -7,7 +7,7 @@ const projects = [
     subtitle: "Vídeos verticais como gatilho de conversão",
     description: "Feature de vídeos curtos criada para aumentar tempo de tela. Virou o super trunfo do Sexlog. Conduzi um teste A/B com 4 grupos pra descobrir o modelo que maximiza receita.",
     tags: ["Product Discovery", "A/B Test", "Freemium"],
-    impact: "↑ Tempo de tela · ↑ Conversão · Super trunfo do produto",
+    impact: "↑ 4% em conversão geral no site · ↑ 3% em tempo de tela",
     link: "projetos/espiadinhas.html",
     available: true
   },
