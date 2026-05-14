@@ -22,6 +22,16 @@ const projects = [
     available: true
   },
   {
+    icon: "🎬",
+    title: "CocFlix",
+    subtitle: "Projeto freelance: plataforma de streaming",
+    description: "Freelance para cliente externo. Plataforma de streaming sob medida com catálogo navegável, interface estilo Netflix e painel administrativo (CMS) completo para gestão de conteúdo e usuários.",
+    tags: ["Freelance", "Streaming", "UI Web", "CMS"],
+    impact: "Produto end-to-end · App + admin · Identidade visual própria",
+    link: "projetos/cocflix.html",
+    available: true
+  },
+  {
     icon: "💳",
     title: "Cartãodinho",
     subtitle: "Projeto freelance: app de gestão de cartões",
