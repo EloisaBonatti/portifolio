@@ -218,6 +218,14 @@ img { max-width: 100%; display: block; }
 }
 .role__title {
   font-size: 1rem; font-weight: 600; margin-bottom: 8px;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.role__promo {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem; font-weight: 600;
+  padding: 3px 10px; border-radius: 20px;
+  background: var(--accent); color: var(--bg);
+  white-space: nowrap;
 }
 .role__desc { color: var(--text); font-size: 0.95rem; line-height: 1.7; opacity: 0.88; }
 
