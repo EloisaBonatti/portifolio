@@ -2,6 +2,16 @@
 // Cada projeto pode ter uma página de detalhe em /projetos/<slug>.html
 const projects = [
   {
+    icon: "👤",
+    title: "Reescrita do Perfil do Sexlog",
+    subtitle: "Liderança técnica e de produto · Angular → React",
+    description: "Como PO, liderei a reescrita completa do perfil do Sexlog (60% do tráfego do site) migrando de Angular para React. Mobile-first, fatiado por aba e entregue em etapas sem causar incidente.",
+    tags: ["Liderança", "Migração de Stack", "Mobile-first", "Discovery"],
+    impact: "60% do tráfego do site · 7 meses · zero incidentes",
+    link: "projetos/reescrita-perfil.html",
+    available: true
+  },
+  {
     icon: "🎬",
     title: "Espiadinhas",
     subtitle: "Vídeos verticais como gatilho de conversão",

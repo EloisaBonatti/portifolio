@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reescrita completa do perfil do Sexlog: migração Angular → React liderada por Eloisa Bonatti como Product Owner. 60% do tráfego do site, 7 meses, zero incidentes." />
+  <title>Reescrita do Perfil do Sexlog · Case de Liderança · Eloisa Bonatti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/main.css" />
+  <link rel="stylesheet" href="../src/styles/case.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">✦ eloisa</a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="../index.html#sobre">Sobre</a></li>
+          <li><a href="../index.html#projetos">Projetos</a></li>
+          <li><a href="../index.html#experiencia">Experiência</a></li>
+          <li><a href="../index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+
+  <!-- CASE HERO -->
+  <section class="case-hero">
+    <div class="container">
+      <a href="../index.html#projetos" class="back-link">← Voltar para projetos</a>
+      <div class="case-hero__icon">👤</div>
+      <p class="case-hero__category">Case de Liderança · Sexlog</p>
+      <h1 class="case-hero__title">Reescrita do Perfil do Sexlog</h1>
+      <p class="case-hero__subtitle">
+        Como Product Owner, <strong>liderei a reescrita completa do perfil do Sexlog</strong>,
+        a tela responsável por <strong>60% do tráfego do site</strong>. Trocamos a tecnologia
+        de Angular para React, redesenhamos toda a experiência com foco mobile-first e
+        entregamos em <strong>7 meses, em etapas e sem nenhum incidente em produção</strong>.
+      </p>
+      <div class="author-badge">🤝 Liderança · Produto · Engenharia · Design</div>
+    </div>
+  </section>
+
+  <!-- CASE BODY -->
+  <article class="case-body container">
+
+    <!-- TL;DR -->
+    <section class="case-section">
+      <h2><span class="case-section__num">00</span> TL;DR</h2>
+      <div class="callout">
+        <p>
+          O perfil do Sexlog respondia por 60% do tráfego do site e estava preso a uma
+          stack antiga em Angular, com débito técnico acumulado e UX defasada. Como PO,
+          conduzi a reescrita completa em React com redesign mobile-first. A entrega
+          aconteceu em <strong>7 meses</strong>, fatiada em <strong>8 frentes
+          independentes</strong> (uma por aba do perfil + widgets de desktop) pra reduzir
+          risco, manter o site no ar e dar ritmo de entrega ao time. Resultado:
+          <strong>zero incidentes</strong> em produção durante toda a migração.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTEXTO -->
+    <section class="case-section">
+      <h2><span class="case-section__num">01</span> Contexto e desafio</h2>
+      <p>
+        O perfil do usuário é o coração do Sexlog. É a tela que mais recebe visitas
+        (próprias e de outros usuários), onde acontece a maior parte do tempo de
+        permanência e onde decisões de conversão são tomadas: assinar, mandar mensagem,
+        seguir, comentar. Concentra <strong>60% do tráfego do site</strong>.
+      </p>
+      <p>
+        O problema: a tela estava em Angular, fora do stack moderno do produto,
+        difícil de manter e impossível de evoluir no ritmo necessário. Cada nova
+        feature exigia ajustes em duas tecnologias e o time não conseguia entregar
+        com confiança. A UX também estava defasada, sem o cuidado mobile-first que
+        a base atual exige.
+      </p>
+      <div class="callout">
+        <p>
+          <strong>O desafio:</strong> reescrever a parte mais importante do produto,
+          do zero, sem derrubar 60% do tráfego e sem virar um projeto eterno.
+        </p>
+      </div>
+    </section>
+
+    <!-- ESTRATÉGIA -->
+    <section class="case-section">
+      <h2><span class="case-section__num">02</span> Estratégia de entrega</h2>
+      <p>
+        A primeira decisão como PO foi <strong>não tratar isso como um único projeto
+        gigante</strong>. Reescrever o perfil inteiro de uma vez seria um pesadelo de
+        risco e de moral do time. Olhei pra estrutura do perfil e percebi: ele já é
+        naturalmente fatiado em abas. Cada aba podia virar uma <strong>entrega
+        independente</strong>, com critério de pronto próprio, deploy próprio e janela
+        de validação própria.
+      </p>
+      <p>Princípios que apliquei:</p>
+      <ul class="bullet-list">
+        <li>
+          <strong>Fatiar pelas abas:</strong> cada aba virou um case pequeno e
+          palpável, com escopo de 2 a 4 sprints. Times tinham visão clara de início,
+          meio e fim de cada frente.
+        </li>
+        <li>
+          <strong>Mobile-first:</strong> a base do Sexlog é majoritariamente mobile,
+          então cada aba começava pelo design mobile e só depois ganhava o tratamento
+          desktop. Inverte a ordem clássica e foca onde o tráfego está.
+        </li>
+        <li>
+          <strong>Coexistência segura:</strong> o React novo convivia com o Angular
+          antigo aba por aba. Quando uma aba subia em React, a antiga ficava como
+          fallback até a validação completa.
+        </li>
+        <li>
+          <strong>Zero incidente como objetivo:</strong> tratado como métrica de
+          qualidade, não como sorte. Cada release tinha plano de rollback claro e
+          monitoramento dedicado nas primeiras 48h.
+        </li>
+        <li>
+          <strong>Ritmo constante:</strong> uma aba por mês na média. Manteve a moral
+          alta e a base sempre vendo mudanças concretas.
+        </li>
+      </ul>
+    </section>
+
+    <!-- AS 8 ENTREGAS -->
+    <section class="case-section">
+      <h2><span class="case-section__num">03</span> As 8 entregas independentes</h2>
+      <p>
+        Dividi o projeto em frentes independentes, cada uma com escopo, critério de
+        pronto e métricas próprias. Aqui tá a visão de alto nível de cada uma:
+      </p>
+      <div class="groups">
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Entrega 1</span>
+            <span class="group__role">Fundação</span>
+          </div>
+          <h3>Aba "Sobre"</h3>
+          <p>
+            A aba mais leve, escolhida pra abrir o projeto. Permitiu validar a
+            infraestrutura de coexistência Angular/React, padrões de componentes e
+            o fluxo de deploy seguro com um escopo pequeno. Foi o ensaio que
+            destravou tudo.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Entrega 2</span>
+            <span class="group__role">Conteúdo visual</span>
+          </div>
+          <h3>Aba "Fotos"</h3>
+          <p>
+            Reescrita do grid de fotos, com carregamento otimizado e visualização
+            ampliada em modo carrossel. Validou padrões de lazy loading e tratamento
+            de mídia que serviriam pras próximas abas.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Entrega 3</span>
+            <span class="group__role">Conteúdo visual</span>
+          </div>
+          <h3>Aba "Vídeos"</h3>
+          <p>
+            Mesmo padrão da aba Fotos, com player otimizado e controles refeitos.
+            Aproveitou os componentes da entrega anterior, acelerando a entrega.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Entrega 4</span>
+            <span class="group__role">Core social</span>
+          </div>
+          <h3>Aba "Publicações"</h3>
+          <p>
+            Uma das mais complexas: feed do perfil com posts (texto, foto, vídeo,
+            múltiplas mídias), reações, comentários e paginação infinita. Mobile-first
+            com curadoria fina dos estados de carregamento e erro.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Entrega 5</span>
+            <span class="group__role">Core social</span>
+          </div>
+          <h3>Aba "Amigos"</h3>
+          <p>
+            Lista de conexões, gerenciamento de solicitações, busca dentro da rede.
+            Trouxe uma camada de complexidade nova: cache de estado, sincronização
+            em tempo real e tratamento de muitos itens.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Entrega 6</span>
+            <span class="group__role">Confiança</span>
+          </div>
+          <h3>Aba "Indicações e Depoimentos reais"</h3>
+          <p>
+            Aba crítica pra confiança no perfil: depoimentos de outros usuários
+            verificados, com regras de exibição e moderação próprias. Exigiu cuidado
+            extra com privacidade e edge cases.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Entrega 7</span>
+            <span class="group__role">Dados</span>
+          </div>
+          <h3>Aba "Estatísticas do perfil"</h3>
+          <p>
+            Métricas do próprio perfil pro dono da conta: visualizações, evolução,
+            comparativos. Envolveu construir uma camada de dados própria e
+            componentes de visualização novos.
+          </p>
+        </div>
+
+        <div class="group">
+          <div class="group__header">
+            <span class="group__badge">Entrega 8</span>
+            <span class="group__role">Desktop</span>
+          </div>
+          <h3>Widgets do desktop</h3>
+          <p>
+            Depois de toda a base mobile entregue, redesenhei a experiência desktop
+            como composição de widgets em colunas. Aproveita o espaço extra sem
+            quebrar o que já funcionava no mobile.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMO ORGANIZEI -->
+    <section class="case-section">
+      <h2><span class="case-section__num">04</span> Como organizei o trabalho</h2>
+      <ul class="bullet-list">
+        <li>
+          <strong>Roadmap visível pra todos:</strong> as 8 frentes em uma timeline
+          única, com responsáveis e dependências. Stakeholders enxergavam o avanço sem
+          precisar perguntar.
+        </li>
+        <li>
+          <strong>Critério de pronto por aba:</strong> cada frente tinha sua própria
+          definição de pronto, baseada em qualidade técnica e UX. Nada subia sem
+          passar pelo checklist.
+        </li>
+        <li>
+          <strong>Refinamento em ondas:</strong> enquanto uma aba estava em
+          desenvolvimento, a próxima era refinada. Time nunca ficava esperando
+          escopo.
+        </li>
+        <li>
+          <strong>Risco mapeado por entrega:</strong> cada aba tinha plano de
+          rollback claro, monitoramento dedicado e janela de stabilização antes
+          da próxima começar.
+        </li>
+        <li>
+          <strong>Métricas próprias de cada aba:</strong> não esperava o final do
+          projeto pra medir resultado. Cada release tinha indicadores próprios
+          (engajamento, tempo na aba, erros) acompanhados em painel próprio.
+        </li>
+      </ul>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section class="case-section">
+      <h2><span class="case-section__num">05</span> Resultados</h2>
+      <div class="winner-card">
+        <div class="winner-card__badge">🎯 Resultado consolidado</div>
+        <h3>7 meses · 8 entregas · zero incidente</h3>
+        <p>
+          O perfil inteiro foi reescrito em React, com a UX redesenhada mobile-first,
+          em <strong>7 meses</strong>, dividido em <strong>8 entregas independentes</strong>
+          e <strong>sem causar nenhum incidente em produção</strong>, mesmo respondendo
+          por 60% do tráfego do site.
+        </p>
+      </div>
+      <ul class="bullet-list">
+        <li>
+          <strong>Stack modernizada:</strong> Angular descontinuado no perfil,
+          unificando o stack do produto e destravando ritmo de evolução.
+        </li>
+        <li>
+          <strong>Experiência mobile-first:</strong> cada aba revisitada com foco
+          no dispositivo onde está a maior parte da base.
+        </li>
+        <li>
+          <strong>Risco controlado:</strong> nenhuma das 8 entregas precisou de
+          rollback. Coexistência segura entre stacks funcionou em produção.
+        </li>
+        <li>
+          <strong>Time com velocidade previsível:</strong> entregas em ritmo
+          constante (~1 aba/mês) deram confiança ao time e aos stakeholders.
+        </li>
+      </ul>
+    </section>
+
+    <!-- APRENDIZADOS -->
+    <section class="case-section">
+      <h2><span class="case-section__num">06</span> Aprendizados de liderança</h2>
+      <ul class="bullet-list">
+        <li>
+          <strong>Projeto gigante vira projeto pequeno quando bem fatiado:</strong>
+          o segredo foi enxergar onde estavam as costuras naturais (as abas) e
+          tratar cada uma como produto. Cada release virava motivo de comemoração
+          do time, não só uma etapa intermediária.
+        </li>
+        <li>
+          <strong>Zero incidente não é sorte, é critério:</strong> tratar segurança
+          de produção como métrica de qualidade desde o dia zero muda a postura
+          do time. Plano de rollback faz parte do critério de pronto, não é
+          contingência.
+        </li>
+        <li>
+          <strong>Mobile-first como decisão estratégica, não estética:</strong>
+          inverter a ordem clássica (desenhar mobile primeiro, depois desktop)
+          obrigou todo mundo a pensar na maior parte da base antes de pensar nos
+          casos de borda. Mudou a qualidade das decisões.
+        </li>
+        <li>
+          <strong>Ritmo importa tanto quanto entrega:</strong> manter cadência de
+          uma entrega por mês deu sensação de progresso constante. Mais do que
+          velocidade, é previsibilidade.
+        </li>
+        <li>
+          <strong>PO existe pra reduzir risco, não só pra priorizar feature:</strong>
+          a maior parte do meu trabalho nesse projeto foi de risco e gente, não
+          de feature. Negociar com stakeholders pra deixar fatiar, defender o
+          time pra fazer com qualidade e proteger a janela de estabilização.
+        </li>
+      </ul>
+    </section>
+
+  </article>
+
+  <!-- NAV ENTRE PROJETOS -->
+  <section class="case-nav container">
+    <a href="../index.html#projetos" class="btn btn--ghost">← Todos os projetos</a>
+    <a href="../index.html#contato" class="btn btn--primary">Vamos conversar →</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Feito com 💖 por Eloisa Bonatti · <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="../src/utils/main.js"></script>
+</body>
+</html>
