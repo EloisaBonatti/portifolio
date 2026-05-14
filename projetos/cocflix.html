@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CocFlix: projeto freelance de plataforma de streaming com catálogo e painel administrativo, desenhado por Eloisa Bonatti." />
+  <title>CocFlix · Projeto Freelance · Eloisa Bonatti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/main.css" />
+  <link rel="stylesheet" href="../src/styles/case.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">✦ eloisa</a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="../index.html#sobre">Sobre</a></li>
+          <li><a href="../index.html#projetos">Projetos</a></li>
+          <li><a href="../index.html#experiencia">Experiência</a></li>
+          <li><a href="../index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+
+  <!-- CASE HERO -->
+  <section class="case-hero">
+    <div class="container">
+      <a href="../index.html#projetos" class="back-link">← Voltar para projetos</a>
+      <div class="case-hero__icon">🎬</div>
+      <p class="case-hero__category">Projeto Freelance · Plataforma de Streaming</p>
+      <h1 class="case-hero__title">CocFlix</h1>
+      <p class="case-hero__subtitle">
+        Projeto <strong>freelance para um cliente externo</strong>: uma plataforma
+        de streaming sob medida, com catálogo navegável estilo Netflix e
+        <strong>painel administrativo (CMS)</strong> completo para gestão de
+        conteúdo, categorias e usuários. Desenhei toda a experiência do espectador
+        e a interface de operação por trás dela.
+      </p>
+      <div class="author-badge">🤝 Freelance · Cliente externo · App + Admin</div>
+    </div>
+  </section>
+
+  <!-- CASE BODY -->
+  <article class="case-body container">
+
+    <!-- TL;DR -->
+    <section class="case-section">
+      <h2><span class="case-section__num">00</span> TL;DR</h2>
+      <div class="callout">
+        <p>
+          Um cliente me procurou querendo lançar uma plataforma própria de
+          streaming, com catálogo, perfis de usuário e back-office para gerenciar
+          conteúdo. Conduzi o projeto end-to-end: do entendimento do nicho e
+          arquitetura de informação até as telas finais de catálogo, player,
+          perfil e <strong>todo o painel administrativo</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- VISÃO GERAL -->
+    <section class="case-section">
+      <h2><span class="case-section__num">01</span> Visão geral do projeto</h2>
+      <p>
+        O CocFlix é uma plataforma de streaming completa, com duas grandes
+        camadas de produto:
+      </p>
+      <ul class="bullet-list">
+        <li>
+          <strong>App do espectador:</strong> descoberta de conteúdo, catálogo
+          navegável por categorias, página de detalhe do título, player e
+          perfis personalizados.
+        </li>
+        <li>
+          <strong>Painel administrativo (CMS):</strong> gestão de catálogo,
+          curadoria de destaques, gerenciamento de usuários e relatórios
+          internos. Pensado pra operar a plataforma sem dependência de dev pra
+          tarefas do dia a dia.
+        </li>
+      </ul>
+      <figure class="screenshot">
+        <img src="../public/cocflix/overview.jpg" alt="Visão geral das telas do CocFlix: catálogo, player, perfis e painel administrativo" loading="lazy" />
+      </figure>
+      <p class="muted">
+        <small>Visão geral do arquivo Figma com as principais telas e fluxos do produto.</small>
+      </p>
+    </section>
+
+    <!-- CONTEXTO FREELANCE -->
+    <section class="case-section">
+      <h2><span class="case-section__num">02</span> Contexto do projeto</h2>
+      <p>
+        Esse foi um <strong>trabalho freelance</strong> que conduzi fora do meu
+        dia a dia como PO/Designer no Sexlog. O cliente tinha a ambição de
+        lançar um produto de streaming próprio e precisava de alguém que
+        entregasse <strong>tanto a experiência do usuário final quanto a
+        ferramenta de operação por trás</strong>, sem precisar contratar dois
+        especialistas.
+      </p>
+      <p>O escopo final do meu trabalho incluiu:</p>
+      <ul class="bullet-list">
+        <li>Discovery e alinhamento de visão com o cliente</li>
+        <li>Arquitetura de informação do catálogo</li>
+        <li>Desenho dos fluxos de descoberta e consumo</li>
+        <li>Telas do app do espectador (home, categorias, detalhe, player, perfil)</li>
+        <li>Telas do painel administrativo (CMS de conteúdo e gestão de usuários)</li>
+        <li>Definição de identidade visual e design system básico</li>
+      </ul>
+    </section>
+
+    <!-- DOR / OPORTUNIDADE -->
+    <section class="case-section">
+      <h2><span class="case-section__num">03</span> A dor que o produto endereça</h2>
+      <p>
+        Lançar uma plataforma de streaming exige resolver dois problemas ao
+        mesmo tempo: <strong>fazer com que o espectador encontre conteúdo
+        rapidamente</strong> e <strong>permitir que o time interno gerencie a
+        biblioteca sem fricção</strong>. Quando essas duas camadas não conversam,
+        o produto trava: ou o catálogo vira uma bagunça, ou a curadoria não
+        consegue acompanhar o ritmo do conteúdo.
+      </p>
+      <p>
+        O cliente já tinha tentado soluções genéricas (templates de marketplace,
+        plugins de WordPress) e nenhuma deu conta da complexidade real do uso
+        diário. A oportunidade era construir algo <strong>desenhado
+        especificamente</strong> pra esse caso, com decisões de produto baseadas
+        no que o operador realmente precisa fazer.
+      </p>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="case-section">
+      <h2><span class="case-section__num">04</span> Processo de discovery</h2>
+      <p>
+        Antes de qualquer tela, dediquei tempo a entender as duas pontas:
+      </p>
+      <ul class="bullet-list">
+        <li>
+          <strong>Conversa com o cliente:</strong> entendi o público alvo, o tipo
+          de conteúdo que ia rodar, frequência de atualização do catálogo e
+          como ele imaginava monetizar.
+        </li>
+        <li>
+          <strong>Mapeamento da operação:</strong> simulei o dia a dia de quem
+          opera o catálogo (cadastro de título, categorização, destaques,
+          publicação) pra desenhar um CMS que combinasse com o ritmo real.
+        </li>
+        <li>
+          <strong>Benchmark de plataformas:</strong> analisei Netflix, Globoplay,
+          Disney+ e outros players pra identificar padrões de descoberta de
+          conteúdo que os usuários já esperam.
+        </li>
+        <li>
+          <strong>Definição de prioridades:</strong> fechei com o cliente quais
+          fluxos eram obrigatórios no MVP e quais entrariam em fases seguintes.
+        </li>
+      </ul>
+    </section>
+
+    <!-- SOLUÇÃO -->
+    <section class="case-section">
+      <h2><span class="case-section__num">05</span> Solução desenhada</h2>
+      <p>
+        A plataforma foi estruturada em dois grandes módulos conectados pela
+        mesma base de conteúdo:
+      </p>
+
+      <h3 class="screen-title">App do espectador</h3>
+      <p>
+        Foco em <strong>descoberta passiva</strong>: o usuário entra e o produto
+        já entrega contexto. Home com carrosséis temáticos, página de título com
+        sinopse e ações claras (assistir, salvar, compartilhar), perfis para
+        múltiplos usuários no mesmo plano e busca rápida com sugestões.
+      </p>
+
+      <h3 class="screen-title">Painel administrativo (CMS)</h3>
+      <p>
+        Foco em <strong>velocidade de operação</strong>: cadastro de título em
+        poucos cliques, categorização múltipla, controle de destaques na home,
+        gestão de usuários (planos, status, suporte) e relatórios para acompanhar
+        o que está rodando bem.
+      </p>
+    </section>
+
+    <!-- DECISÕES -->
+    <section class="case-section">
+      <h2><span class="case-section__num">06</span> Decisões de produto</h2>
+      <ul class="bullet-list">
+        <li>
+          <strong>Tema escuro como padrão:</strong> coerente com o consumo de
+          vídeo (ambiente que reduz cansaço visual) e alinhado com a expectativa
+          do usuário em apps de streaming.
+        </li>
+        <li>
+          <strong>Catálogo orientado por carrosséis horizontais:</strong> permite
+          ao usuário escanear visualmente várias opções sem comprometer o foco,
+          padrão consolidado pelos grandes players do mercado.
+        </li>
+        <li>
+          <strong>CMS com mesma identidade do app:</strong> evitei a tentação de
+          usar dashboards "padrão técnico". O painel admin compartilha o
+          design system do produto principal, o que reduz a curva de
+          aprendizado para a equipe interna.
+        </li>
+        <li>
+          <strong>Curadoria como ação de primeira classe:</strong> destacar um
+          título na home é uma ação que o operador faz toda semana. Desenhei
+          o fluxo de destaque pra ser feito em segundos, sem entrar em modal ou
+          tela cheia.
+        </li>
+      </ul>
+    </section>
+
+    <!-- ENCERRAMENTO -->
+    <section class="case-section">
+      <h2><span class="case-section__num">07</span> O que esse projeto provou</h2>
+      <ul class="bullet-list">
+        <li>
+          <strong>Capacidade de desenhar duas pontas conectadas</strong> (produto
+          para usuário final e ferramenta interna) sem perder coerência entre as
+          duas.
+        </li>
+        <li>
+          <strong>Trabalhar com cliente externo,</strong> traduzindo ambição em
+          escopo viável, priorizando o que entra no MVP e desenhando o produto
+          pra ser entregue em fases.
+        </li>
+        <li>
+          <strong>Aplicar padrões consolidados sem perder identidade própria,</strong>
+          construindo algo familiar pro usuário mas único na execução.
+        </li>
+      </ul>
+    </section>
+
+  </article>
+
+  <!-- NAV ENTRE PROJETOS -->
+  <section class="case-nav container">
+    <a href="../index.html#projetos" class="btn btn--ghost">← Todos os projetos</a>
+    <a href="../index.html#contato" class="btn btn--primary">Vamos conversar →</a>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Feito com 💖 por Eloisa Bonatti · <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script src="../src/utils/main.js"></script>
+</body>
+</html>
